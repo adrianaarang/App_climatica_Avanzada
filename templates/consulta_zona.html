@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interfaz Tiempo | App Climática</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <main class="container">
+
+    <section class="weather-card">
+      <h1>Registro de datos meteorológicos</h1>
+      <p class="subtitle">Introduce los datos del clima</p>
+
+      {% if usuario %}
+        <p class="usuario-activo">Sesión iniciada como: <strong>{{ usuario }}</strong></p>
+      {% endif %}
+
+      {% if mensaje %}
+        <p class="mensaje-ok">{{ mensaje }}</p>
+      {% endif %}
+
+      {% if alertas %}
+        <div class="alertas-box">
+          {% for alerta in alertas %}
+            <p class="mensaje-alerta">{{ alerta }}</p>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      <form id="weatherForm" action="{{ url_for('guardar_datos') }}" method="POST">
+
+        <div class="form-group">
+          <label for="fecha">Fecha</label>
+          <input type="date" id="fecha" name="fecha" required>
+        </div>
+
+        <div class="form-group">
+          <label for="zona">Zona ciudad</label>
+          <select id="zona" name="zona" required>
+            <option value="">Selecciona una zona de la ciudad</option>
+            <option value="Centro">Centro</option>
+            <option value="Norte">Norte</option>
+            <option value="Sur">Sur</option>
+            <option value="Este">Este</option>
+            <option value="Oeste">Oeste</option>
+            <option value="Cantabria">Cantabria</option>
+            <option value="Castilla-La Mancha">Castilla-La Mancha</option>
+            <option value="Castilla y León">Castilla y León</option>
+            <option value="Cataluña">Cataluña</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="temperatura">Temperatura (ºC)</label>
+          <input type="number" id="temperatura" name="temperatura" step="0.1" required>
+        </div>
+
+        <div class="form-group">
+          <label for="humedad">Humedad (%)</label>
+          <input type="number" id="humedad" name="humedad" min="0" max="100" required>
+        </div>
+
+        <div class="form-group">
+          <label for="viento">Viento (km/h)</label>
+          <input type="number" id="viento" name="viento" step="0.1" required>
+        </div>
+
+        <div class="form-group">
+          <label for="lluvia">Lluvia (mm)</label>
+          <input type="number" id="lluvia" name="lluvia" step="0.1" required>
+        </div>
+
+        <button type="submit" class="btn-primary">Guardar datos</button>
+      </form>
+
+      <div class="actions">
+        <a href="{{ url_for('consulta') }}" class="btn-secondary">Consultar por zona</a>
+        <a href="{{ url_for('estadisticas') }}" class="btn-secondary">Ver estadísticas</a>
+        <a href="{{ url_for('logout') }}" class="btn-danger">Cerrar sesión</a>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="{{ url_for('static', filename='js/weather.js') }}"></script>
+</body>
+</html>

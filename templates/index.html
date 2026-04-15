@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio | App Climática</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <main class="container">
+
+    <section class="home-card">
+
+      <h1>🌦️ App Climática</h1>
+      <p class="subtitle">
+        Sistema de registro y análisis de datos meteorológicos por zonas de España
+      </p>
+
+      <div class="home-actions">
+
+        <a href="{{ url_for('registro') }}" class="btn-primary">
+          Crear cuenta
+        </a>
+
+        <a href="{{ url_for('login') }}" class="btn-secondary">
+          Iniciar sesión
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
