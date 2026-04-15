@@ -1,66 +1,67 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("registroForm");
-  if (!form) return;
+    // 1. Intentamos obtener los formularios (Asegúrate de poner estos IDs en tu HTML)
+    const loginForm = document.getElementById("loginForm");
+    const registroForm = document.getElementById("registroForm");
 
-  const email = document.getElementById("email");
-  const password = document.getElementById("password");
-  const emailError = document.getElementById("emailError");
-  const passwordError = document.getElementById("passwordError");
+    // Función genérica para mostrar errores
+    const showError = (elementId, message) => {
+        const errorElement = document.getElementById(elementId);
+        if (errorElement) errorElement.textContent = message;
+    };
 
-  form.addEventListener("submit", (e) => {
-    let valid = true;
+    const validateEmail = (email) => {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    };
 
-    emailError.textContent = "";
-    passwordError.textContent = "";
+    // --- LÓGICA PARA LOGIN ---
+    if (loginForm) {
+        loginForm.addEventListener("submit", (e) => {
+            let valid = true;
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value.trim();
 
-    const emailValue = email.value.trim();
-    const passwordValue = password.value.trim();
+            showError("emailError", "");
+            showError("passwordError", "");
 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!validateEmail(email)) {
+                showError("emailError", "Introduce un correo válido.");
+                valid = false;
+            }
+            if (password.length === 0) {
+                showError("passwordError", "La contraseña es obligatoria.");
+                valid = false;
+            }
 
-    if (!emailRegex.test(emailValue)) {
-      emailError.textContent = "Introduce un correo electrónico válido.";
-      valid = false;
+            if (!valid) e.preventDefault();
+        });
     }
 
-    if (passwordValue.length < 6) {
-      passwordError.textContent = "La contraseña debe tener al menos 6 caracteres.";
-      valid = false;
-    }
+    // --- LÓGICA PARA REGISTRO ---
+    if (registroForm) {
+        registroForm.addEventListener("submit", (e) => {
+            let valid = true;
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value.trim();
+            const confirmPassword = document.getElementById("confirm_password").value.trim();
 
-    if (!valid) {
-      e.preventDefault();
+            showError("emailError", "");
+            showError("passwordError", "");
+            showError("confirmPasswordError", "");
+
+            if (!validateEmail(email)) {
+                showError("emailError", "Email no válido.");
+                valid = false;
+            }
+            if (password.length < 6) {
+                showError("passwordError", "Mínimo 6 caracteres.");
+                valid = false;
+            }
+            if (password !== confirmPassword) {
+                showError("confirmPasswordError", "Las contraseñas no coinciden.");
+                valid = false;
+            }
+
+            if (!valid) e.preventDefault();
+        });
     }
-  });
 });
-
-const loginForm = document.getElementById("loginForm");
-
-if (loginForm) {
-  loginForm.addEventListener("submit", (e) => {
-    let valid = true;
-
-    const email = document.getElementById("email").value.trim();
-    const password = document.getElementById("password").value.trim();
-
-    const emailError = document.getElementById("emailError");
-    const passwordError = document.getElementById("passwordError");
-
-    emailError.textContent = "";
-    passwordError.textContent = "";
-
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    if (!emailRegex.test(email)) {
-      emailError.textContent = "Email no válido";
-      valid = false;
-    }
-
-    if (password.length === 0) {
-      passwordError.textContent = "Introduce la contraseña";
-      valid = false;
-    }
-
-    if (!valid) e.preventDefault();
-  });
-}

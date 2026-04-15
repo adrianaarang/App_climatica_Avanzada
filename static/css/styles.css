@@ -1,55 +1,120 @@
+.container {
+  /* Ocupa todo el alto de la ventana del navegador */
+  min-height: 100vh; 
+  
+  /* Activa el modo flexible */
+  display: flex;
+  
+  /* Centra horizontalmente */
+  justify-content: center;
+  
+  /* Centra verticalmente */
+  align-items: center;
+  
+  /* Espaciado para que no toque los bordes en móviles */
+  padding: 20px;
+  
+  /* Asegura que el fondo cubra todo */
+  background: linear-gradient(135deg, #f0f7f7, #e6f2f3);
+}
+
+/* Asegúrate de que el body no tenga scroll innecesario que rompa el centrado */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 /* =========================
-      SECCIÓN DE GRÁFICAS
+   ESTILOS PARA LA PÁGINA DE INICIO (HOME)
    ========================= */
 
-.section-title {
-  margin-top: 30px;
-  margin-bottom: 20px;
-  color: rgba(57, 149, 157, 0.873);
-  text-align: center;
-  font-size: 1.5rem;
-}
-
-.graficas-grid {
-  display: grid;
-  /* Crea columnas automáticas de mínimo 280px */
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.grafica-box {
+/* Contenedor de la tarjeta de inicio */
+.home-card {
   background-color: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 15px;
-  padding: 15px;
+  width: 100%;
+  max-width: 550px; /* Un poco más estrecha para que se vea elegante */
+  padding: 50px 40px;
+  border-radius: 24px;
+  box-shadow: 0 15px 35px rgba(57, 149, 157, 0.15);
   text-align: center;
-  box-shadow: 0 4px 12px rgba(31, 60, 136, 0.05);
-  transition: transform 0.3s ease;
+  animation: fadeIn 0.8s ease-out; /* Pequeña animación de entrada */
 }
 
-.grafica-box:hover {
-  transform: translateY(-5px);
-  border-color: rgba(57, 149, 157, 0.873);
+/* El título con el emoji */
+.home-card h1 {
+  color: rgba(57, 149, 157, 0.9);
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-.grafica-box h3 {
-  font-size: 1rem;
-  color: rgba(57, 149, 157, 0.873);
-  margin-bottom: 12px;
-  font-weight: bold;
+/* El texto descriptivo */
+.home-card .subtitle {
+  color: #6B7280;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
 }
 
-.grafica-box img {
-  width: 100%;    /* La imagen nunca se sale de la caja */
-  height: auto;   /* Mantiene la proporción */
-  border-radius: 10px;
+/* Contenedor de los botones */
+.home-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Botones de la Home */
+.home-actions a {
   display: block;
+  width: 100%;
+  padding: 16px;
+  border-radius: 14px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-/* Ajuste para móviles muy pequeños */
+/* Botón "Crear cuenta" (Principal) */
+.btn-primary {
+  background-color: rgba(57, 149, 157, 0.873);
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: rgba(45, 120, 126, 1);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(57, 149, 157, 0.3);
+}
+
+/* Botón "Iniciar sesión" (Secundario) */
+.btn-secondary {
+  background-color: transparent;
+  color: rgba(57, 149, 157, 0.873);
+  border: 2px solid rgba(57, 149, 157, 0.873);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(57, 149, 157, 0.05);
+  transform: translateY(-3px);
+}
+
+/* Animación suave al cargar la página */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Ajuste para móviles */
 @media (max-width: 480px) {
-  .grafica-box {
-    padding: 10px;
+  .home-card {
+    padding: 40px 25px;
+  }
+  .home-card h1 {
+    font-size: 2rem;
   }
 }
