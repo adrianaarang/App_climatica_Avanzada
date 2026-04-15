@@ -5,9 +5,19 @@ import hashlib
 
 class AuthController:
     def __init__(self):
-        # Configuramos la ruta al inicializar el objeto
-        self.base_dir = os.path.dirname(os.path.abspath(__file__))
-        self.data_path = os.path.join(self.base_dir, "usuarios.json")
+        # --- CÓDIGO VIEJO (Se guardaba en la misma carpeta del controlador) ---
+        # self.base_dir = os.path.dirname(os.path.abspath(__file__))
+        # self.data_path = os.path.join(self.base_dir, "usuarios.json")
+        
+        # --- CÓDIGO NUEVO ---
+        # Subimos un nivel para que la carpeta 'data' esté en la raíz del proyecto, no dentro de 'controllers'.
+        self.base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        self.data_dir = os.path.join(self.base_dir, "data")
+        self.data_path = os.path.join(self.data_dir, "usuarios.json")
+
+        # Aseguramos que la carpeta exista para evitar errores de "Ruta no encontrada"
+        if not os.path.exists(self.data_dir):
+            os.makedirs(self.data_dir)
 
     def encriptar_password(self, password):
         """Convierte el texto plano en un código SHA-256."""
@@ -17,24 +27,29 @@ class AuthController:
         """Lee los usuarios del archivo JSON."""
         if not os.path.exists(self.data_path):
             return []
-        with open(self.data_path, "r", encoding="utf-8") as f:
-            return json.load(f)
+        try:
+            with open(self.data_path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except (json.JSONDecodeError, FileNotFoundError):
+            return []
 
     def guardar_usuarios(self, usuarios):
-        """Guarda la lista de usuarios en el JSON."""
+        """Guarda la lista de usuarios en el JSON dentro de la carpeta data."""
         with open(self.data_path, "w", encoding="utf-8") as f:
-            json.dump(usuarios, f, indent=4)
+            json.dump(usuarios, f, indent=4, ensure_ascii=False)
 
     def registrar_usuario(self, email, password):
         """Lógica para registrar un nuevo usuario."""
+        valido, msg = self.validar_datos(email, password)
+        if not valido:
+            return False, msg
+
         usuarios = self.cargar_usuarios()
         
-        # Validación: ¿Ya existe el email?
         for u in usuarios:
             if u["username"] == email:
                 return False, "El usuario ya existe."
 
-        # Encriptamos y guardamos
         password_encriptada = self.encriptar_password(password)
         nuevo = {"username": email, "password": password_encriptada}
 
@@ -42,7 +57,12 @@ class AuthController:
         self.guardar_usuarios(usuarios)
         return True, "Registro completado con éxito."
 
-    def verificar_login(self, email, password):
+    # --- CÓDIGO VIEJO (Nombre no coincidente con app.py) ---
+    # def verificar_login(self, email, password):
+    
+    # --- CÓDIGO NUEVO ---
+    # Se renombra a 'iniciar_sesion' porque app.py busca exactamente ese nombre.
+    def iniciar_sesion(self, email, password):
         """Lógica para comprobar si el email y contraseña coinciden."""
         usuarios = self.cargar_usuarios()
         password_a_comprobar = self.encriptar_password(password)
@@ -56,8 +76,12 @@ class AuthController:
 
     def validar_datos(self, email, password):
         """Comprueba si el formato del email es correcto y la clave es larga."""
-        # Expresión regular para validar email
-        regex_email = r"^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w+$"
+        # --- CÓDIGO VIEJO (Regex muy restrictiva) ---
+        # regex_email = r"^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w+$"
+        
+        # --- CÓDIGO NUEVO ---
+        # Regex estándar que acepta mayúsculas, puntos y dominios modernos (ej. .technology, .es).
+        regex_email = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
 
         if not re.match(regex_email, email):
             return False, "El formato del email no es válido."
@@ -65,4 +89,4 @@ class AuthController:
         if len(password) < 6:
             return False, "La contraseña debe tener al menos 6 caracteres."
 
-        return True, "" 
+        return True, ""

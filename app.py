@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, session
 from controllers.auth_controller import AuthController
 from controllers.weather_controller import WeatherController
+from controllers.alert_controller import AlertController 
 from utils.logger_config import configurar_logger
 
 logger = configurar_logger()
@@ -12,31 +13,14 @@ auth_controller = AuthController()
 weather_controller = WeatherController()
 
 
+
 # INICIO
 @app.route("/")
 def inicio():
     return render_template("index.html")
 
 
-# REGISTRO
-@app.route("/registro", methods=["GET", "POST"])
-def registro():
-    if request.method == "POST":
-        email = request.form.get("email", "").strip()
-        password = request.form.get("password", "").strip()
-
-        exito, mensaje = auth_controller.registrar_usuario(email, password)
-
-        if exito:
-            return redirect(url_for("login"))
-
-        return render_template("registro.html", mensaje=mensaje)
-
-    return render_template("registro.html")
-
-
-# LOGIN
-@app.route("/login", methods=["GET", "POST"])
+@app.route("/auth/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
         email = request.form.get("email", "").strip()
@@ -51,6 +35,22 @@ def login():
         return render_template("login.html", mensaje=mensaje)
 
     return render_template("login.html")
+
+
+@app.route("/auth/register", methods=["GET", "POST"])
+def registro():
+    if request.method == "POST":
+        email = request.form.get("email", "").strip()
+        password = request.form.get("password", "").strip()
+
+        exito, mensaje = auth_controller.registrar_usuario(email, password)
+
+        if exito:
+            return redirect(url_for("login"))
+
+        return render_template("registro.html", mensaje=mensaje)
+
+    return render_template("registro.html")
 
 
 # LOGOUT

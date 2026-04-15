@@ -1,0 +1,205 @@
+/* =========================
+   CONFIGURACIÓN DE CENTRADO
+   ========================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #f0f7f7, #e6f2f3);
+  color: #1f2937;
+  /* Centrado total */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* =========================
+   TARJETA (CARD)
+   ========================= */
+.weather-card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 650px;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 15px 35px rgba(57, 149, 157, 0.15);
+}
+
+h1 {
+  color: rgba(57, 149, 157, 0.9);
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: #6B7280;
+  margin-bottom: 30px;
+}
+
+/* =========================
+   MENSAJES Y ALERTAS
+   ========================= */
+.usuario-activo {
+  text-align: center;
+  background-color: #f0fdfa;
+  color: #115e59;
+  border: 1px solid #99f6e4;
+  padding: 10px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.mensaje-ok {
+  background-color: #f0fdf4;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+  padding: 12px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.alertas-box {
+  margin-bottom: 20px;
+}
+
+.mensaje-alerta {
+  background-color: #fffbeb;
+  color: #92400e;
+  border: 1px solid #fde68a;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* =========================
+   FORMULARIO (DISEÑO 2 COLUMNAS)
+   ========================= */
+#weatherForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Divide en dos columnas iguales */
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hacemos que la fecha y la zona ocupen su columna */
+label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #374151;
+  font-size: 0.9rem;
+}
+
+input, select {
+  padding: 12px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: rgba(57, 149, 157, 0.6);
+  box-shadow: 0 0 0 4px rgba(57, 149, 157, 0.1);
+}
+
+/* El botón ocupa las dos columnas */
+.btn-primary {
+  grid-column: span 2;
+  background-color: rgba(57, 149, 157, 0.873);
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 14px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: rgba(45, 120, 126, 1);
+  transform: translateY(-2px);
+}
+
+/* =========================
+   ACCIONES (BOTONES INFERIORES)
+   ========================= */
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #f3f4f6;
+  flex-wrap: wrap; /* Para que en móviles se apilen */
+}
+
+.btn-secondary, .btn-danger {
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-secondary {
+  background-color: #f3f4f6;
+  color: #4b5563;
+}
+
+.btn-secondary:hover {
+  background-color: #e5e7eb;
+}
+
+.btn-danger {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+.btn-danger:hover {
+  background-color: #fecaca;
+}
+
+/* =========================
+   RESPONSIVO (MÓVIL)
+   ========================= */
+@media (max-width: 600px) {
+  #weatherForm {
+    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+  }
+  
+  .btn-primary {
+    grid-column: span 1;
+  }
+  
+  .actions {
+    flex-direction: column;
+  }
+  
+  .btn-secondary, .btn-danger {
+    text-align: center
