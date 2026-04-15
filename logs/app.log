@@ -576,3 +576,28 @@
 2026-04-16 00:17:15,991 - INFO - 127.0.0.1 - - [16/Apr/2026 00:17:15] "GET /auth/login HTTP/1.1" 200 -
 2026-04-16 00:17:16,020 - INFO - 127.0.0.1 - - [16/Apr/2026 00:17:16] "[36mGET /static/css/login_style.css HTTP/1.1[0m" 304 -
 2026-04-16 00:17:16,021 - INFO - 127.0.0.1 - - [16/Apr/2026 00:17:16] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-04-16 00:26:49,338 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-16 00:26:49,338 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-16 00:26:49,339 - INFO -  * Restarting with stat
+2026-04-16 00:26:50,015 - WARNING -  * Debugger is active!
+2026-04-16 00:26:50,017 - INFO -  * Debugger PIN: 588-910-519
+2026-04-16 00:26:50,119 - INFO - 127.0.0.1 - - [16/Apr/2026 00:26:50] "GET /auth/login HTTP/1.1" 200 -
+2026-04-16 00:26:50,196 - INFO - 127.0.0.1 - - [16/Apr/2026 00:26:50] "[36mGET /static/css/login_style.css HTTP/1.1[0m" 304 -
+2026-04-16 00:26:50,197 - INFO - 127.0.0.1 - - [16/Apr/2026 00:26:50] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-04-16 00:28:48,790 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-16 00:28:48,790 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-16 00:28:48,791 - INFO -  * Restarting with stat
+2026-04-16 00:28:49,477 - WARNING -  * Debugger is active!
+2026-04-16 00:28:49,479 - INFO -  * Debugger PIN: 588-910-519
+2026-04-16 00:28:55,006 - INFO - 127.0.0.1 - - [16/Apr/2026 00:28:55] "GET / HTTP/1.1" 200 -
+2026-04-16 00:28:55,197 - INFO - 127.0.0.1 - - [16/Apr/2026 00:28:55] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-04-16 00:28:57,357 - INFO - 127.0.0.1 - - [16/Apr/2026 00:28:57] "GET /auth/login HTTP/1.1" 200 -
+2026-04-16 00:28:57,387 - INFO - 127.0.0.1 - - [16/Apr/2026 00:28:57] "GET /static/css/login_style.css HTTP/1.1" 200 -
+2026-04-16 00:28:57,388 - INFO - 127.0.0.1 - - [16/Apr/2026 00:28:57] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-04-16 00:29:01,373 - INFO - 127.0.0.1 - - [16/Apr/2026 00:29:01] "GET / HTTP/1.1" 200 -
+2026-04-16 00:29:01,398 - INFO - 127.0.0.1 - - [16/Apr/2026 00:29:01] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-04-16 00:29:02,853 - INFO - 127.0.0.1 - - [16/Apr/2026 00:29:02] "GET /auth/register HTTP/1.1" 200 -
+2026-04-16 00:29:02,880 - INFO - 127.0.0.1 - - [16/Apr/2026 00:29:02] "GET /static/css/registro_style.css HTTP/1.1" 200 -
+2026-04-16 00:29:02,881 - INFO - 127.0.0.1 - - [16/Apr/2026 00:29:02] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -

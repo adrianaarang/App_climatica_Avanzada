@@ -27,14 +27,23 @@
 
             <div class="form-group">
                 <label for="confirm_password"><b>Repetir Contraseña</b></label>
-                <input type="password" id="confirm_password" name="confirm_password" minlength="6" required> 
+                <input type="password" id="confirm_password" name="confirm_password" minlength="6" required>
                 <span id="confirmPasswordError" class="error-msg"></span>
             </div>
 
             <div class="form-actions">
                 <button type="submit" class="btn-submit"><b>Registrarse</b></button>
             </div>
+
+            <div class="navigation-links">
+                <a href="{{ url_for('inicio') }}" class="btn-secondary">
+                    ← Volver al inicio
+                </a>
+            </div>
+
         </form>
-    </main> <script src="{{ url_for('static', filename='js/auth.js') }}"></script>
+    </main>
+    <script src="{{ url_for('static', filename='js/auth.js') }}"></script>
 </body>
+
 </html>
