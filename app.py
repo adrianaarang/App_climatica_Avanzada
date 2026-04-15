@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, session
+from flask import Flask, render_template, request, redirect, url_for, session, flash
 from controllers.auth_controller import AuthController
 from controllers.weather_controller import WeatherController
 from controllers.alert_controller import AlertController 
@@ -31,10 +31,11 @@ def login():
         if exito:
             session["usuario"] = email
             return redirect(url_for("interfaz_tiempo"))
-
-        return render_template("login.html", mensaje=mensaje)
-
+        else:
+            flash(mensaje) # Esto guarda el mensaje en la "mochila" de la sesión
+            return redirect(url_for('login'))
     return render_template("login.html")
+
 
 
 @app.route("/auth/register", methods=["GET", "POST"])
@@ -51,6 +52,17 @@ def registro():
         return render_template("registro.html", mensaje=mensaje)
 
     return render_template("registro.html")
+
+
+
+
+
+
+
+
+
+
+
 
 
 # LOGOUT

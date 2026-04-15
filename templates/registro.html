@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de nuevos usuarios</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/registro_style.css') }}">
 </head>
+
 <body>
     <main class="registro-wrapper">
         <h1>Crear Cuenta</h1>
 
-        <form action="/auth/register" method="POST" class="registro-form">
+        <form id="registroForm" action="/auth/register" method="POST" class="registro-form">
             <div class="form-group">
                 <label for="email"><b>Correo Electrónico</b></label>
                 <input type="email" id="email" name="email" required>
+                <span id="emailError" class="error-msg"></span>
             </div>
 
             <div class="form-group">
                 <label for="password"><b>Contraseña</b></label>
-                <input type="password" id="password" name="password" minlength="8" required>
+                <input type="password" id="password" name="password" required>
+                <span id="passwordError" class="error-msg"></span>
             </div>
 
             <div class="form-group">
                 <label for="confirm_password"><b>Repetir Contraseña</b></label>
-                <input type="password" id="confirm_password" name="confirm_password" minlength="8" required>
+                <input type="password" id="confirm_password" name="confirm_password" minlength="6" required> 
+                <span id="confirmPasswordError" class="error-msg"></span>
             </div>
 
             <div class="form-actions">
                 <button type="submit" class="btn-submit"><b>Registrarse</b></button>
             </div>
         </form>
-    </main>
+    </main> <script src="{{ url_for('static', filename='js/auth.js') }}"></script>
 </body>
 </html>

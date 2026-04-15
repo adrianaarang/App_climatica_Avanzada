@@ -44,6 +44,14 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+.alert-error {
+    color: #a94442;
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
 
 button:hover {
     background-color: #1c6d74;

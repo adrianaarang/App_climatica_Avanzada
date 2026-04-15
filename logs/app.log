@@ -355,3 +355,224 @@
 2026-04-15 21:34:18,150 - INFO - 127.0.0.1 - - [15/Apr/2026 21:34:18] "GET /consulta HTTP/1.1" 200 -
 2026-04-15 21:34:18,181 - INFO - 127.0.0.1 - - [15/Apr/2026 21:34:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
 2026-04-15 21:34:18,183 - INFO - 127.0.0.1 - - [15/Apr/2026 21:34:18] "[36mGET /static/js/weather.js HTTP/1.1[0m" 304 -
+2026-04-15 23:08:46,676 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-15 23:08:46,676 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-15 23:08:46,677 - INFO -  * Restarting with stat
+2026-04-15 23:08:47,362 - WARNING -  * Debugger is active!
+2026-04-15 23:08:47,364 - INFO -  * Debugger PIN: 588-910-519
+2026-04-15 23:09:12,146 - INFO - 127.0.0.1 - - [15/Apr/2026 23:09:12] "GET / HTTP/1.1" 200 -
+2026-04-15 23:09:12,178 - INFO - 127.0.0.1 - - [15/Apr/2026 23:09:12] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-04-15 23:09:14,807 - INFO - 127.0.0.1 - - [15/Apr/2026 23:09:14] "GET /auth/register HTTP/1.1" 200 -
+2026-04-15 23:09:14,833 - INFO - 127.0.0.1 - - [15/Apr/2026 23:09:14] "[36mGET /static/css/registro_style.css HTTP/1.1[0m" 304 -
+2026-04-15 23:09:17,270 - INFO - 127.0.0.1 - - [15/Apr/2026 23:09:17] "GET /auth/login HTTP/1.1" 200 -
+2026-04-15 23:09:17,296 - INFO - 127.0.0.1 - - [15/Apr/2026 23:09:17] "[36mGET /static/css/login_style.css HTTP/1.1[0m" 304 -
+2026-04-15 23:09:17,302 - INFO - 127.0.0.1 - - [15/Apr/2026 23:09:17] "GET /static/js/auth.js HTTP/1.1" 200 -
+2026-04-15 23:12:06,593 - INFO - 127.0.0.1 - - [15/Apr/2026 23:12:06] "GET / HTTP/1.1" 200 -
+2026-04-15 23:12:06,629 - INFO - 127.0.0.1 - - [15/Apr/2026 23:12:06] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-04-15 23:12:42,187 - INFO - 127.0.0.1 - - [15/Apr/2026 23:12:42] "GET / HTTP/1.1" 200 -
+2026-04-15 23:12:42,218 - INFO - 127.0.0.1 - - [15/Apr/2026 23:12:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-04-15 23:13:32,406 - INFO - 127.0.0.1 - - [15/Apr/2026 23:13:32] "GET /auth/register HTTP/1.1" 200 -
+2026-04-15 23:13:32,427 - INFO - 127.0.0.1 - - [15/Apr/2026 23:13:32] "[36mGET /static/css/registro_style.css HTTP/1.1[0m" 304 -
+2026-04-15 23:24:12,838 - INFO - 127.0.0.1 - - [15/Apr/2026 23:24:12] "GET /auth/register HTTP/1.1" 200 -
+2026-04-15 23:24:12,877 - INFO - 127.0.0.1 - - [15/Apr/2026 23:24:12] "[36mGET /static/css/registro_style.css HTTP/1.1[0m" 304 -
+2026-04-15 23:24:12,880 - INFO - 127.0.0.1 - - [15/Apr/2026 23:24:12] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-04-15 23:24:30,788 - INFO - 127.0.0.1 - - [15/Apr/2026 23:24:30] "GET /auth/register HTTP/1.1" 200 -
+2026-04-15 23:24:30,813 - INFO - 127.0.0.1 - - [15/Apr/2026 23:24:30] "[36mGET /static/css/registro_style.css HTTP/1.1[0m" 304 -
+2026-04-15 23:24:30,814 - INFO - 127.0.0.1 - - [15/Apr/2026 23:24:30] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-04-15 23:28:13,703 - INFO - 127.0.0.1 - - [15/Apr/2026 23:28:13] "GET /auth/register HTTP/1.1" 200 -
+2026-04-15 23:28:13,733 - INFO - 127.0.0.1 - - [15/Apr/2026 23:28:13] "[36mGET /static/css/registro_style.css HTTP/1.1[0m" 304 -
+2026-04-15 23:28:13,740 - INFO - 127.0.0.1 - - [15/Apr/2026 23:28:13] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-04-15 23:29:11,450 - INFO - 127.0.0.1 - - [15/Apr/2026 23:29:11] "GET /auth/register HTTP/1.1" 200 -
+2026-04-15 23:29:11,477 - INFO - 127.0.0.1 - - [15/Apr/2026 23:29:11] "[36mGET /static/css/registro_style.css HTTP/1.1[0m" 304 -
+2026-04-15 23:29:11,479 - INFO - 127.0.0.1 - - [15/Apr/2026 23:29:11] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-04-15 23:29:45,800 - INFO - 127.0.0.1 - - [15/Apr/2026 23:29:45] "GET / HTTP/1.1" 200 -
+2026-04-15 23:29:45,825 - INFO - 127.0.0.1 - - [15/Apr/2026 23:29:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-04-15 23:34:32,991 - INFO - 127.0.0.1 - - [15/Apr/2026 23:34:32] "GET / HTTP/1.1" 200 -
+2026-04-15 23:34:33,013 - INFO - 127.0.0.1 - - [15/Apr/2026 23:34:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-04-15 23:34:34,762 - INFO - 127.0.0.1 - - [15/Apr/2026 23:34:34] "GET /auth/login HTTP/1.1" 200 -
+2026-04-15 23:34:34,788 - INFO - 127.0.0.1 - - [15/Apr/2026 23:34:34] "[36mGET /static/css/login_style.css HTTP/1.1[0m" 304 -
+2026-04-15 23:34:34,790 - INFO - 127.0.0.1 - - [15/Apr/2026 23:34:34] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-04-15 23:34:51,410 - INFO - 127.0.0.1 - - [15/Apr/2026 23:34:51] "GET /auth/login HTTP/1.1" 200 -
+2026-04-15 23:34:51,452 - INFO - 127.0.0.1 - - [15/Apr/2026 23:34:51] "[36mGET /static/css/login_style.css HTTP/1.1[0m" 304 -
+2026-04-15 23:34:51,454 - INFO - 127.0.0.1 - - [15/Apr/2026 23:34:51] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-04-15 23:34:59,931 - INFO - 127.0.0.1 - - [15/Apr/2026 23:34:59] "POST /auth/login HTTP/1.1" 200 -
+2026-04-15 23:34:59,959 - INFO - 127.0.0.1 - - [15/Apr/2026 23:34:59] "[36mGET /static/css/login_style.css HTTP/1.1[0m" 304 -
+2026-04-15 23:34:59,961 - INFO - 127.0.0.1 - - [15/Apr/2026 23:34:59] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-04-15 23:41:09,995 - INFO -  * Detected change in 'D:\\HELEN\\PERSONAL\\FORMACIÓN\\++ IA - FORMACION\\BOOTCAMP - F5\\CURSO\\PROYECTO 1\\VSC_App_climatica_Python\\App_climatica_Avanzada\\app.py', reloading
+2026-04-15 23:41:10,201 - INFO -  * Restarting with stat
+2026-04-15 23:41:10,993 - WARNING -  * Debugger is active!
+2026-04-15 23:41:10,995 - INFO -  * Debugger PIN: 722-673-592
+2026-04-15 23:41:12,082 - INFO -  * Detected change in 'D:\\HELEN\\PERSONAL\\FORMACIÓN\\++ IA - FORMACION\\BOOTCAMP - F5\\CURSO\\PROYECTO 1\\VSC_App_climatica_Python\\App_climatica_Avanzada\\app.py', reloading
+2026-04-15 23:41:12,212 - INFO -  * Restarting with stat
+2026-04-15 23:45:21,364 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-15 23:45:21,364 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-15 23:45:21,365 - INFO -  * Restarting with stat
+2026-04-15 23:45:22,014 - WARNING -  * Debugger is active!
+2026-04-15 23:45:22,016 - INFO -  * Debugger PIN: 588-910-519
+2026-04-15 23:45:36,623 - INFO - 127.0.0.1 - - [15/Apr/2026 23:45:36] "GET / HTTP/1.1" 200 -
+2026-04-15 23:45:36,832 - INFO - 127.0.0.1 - - [15/Apr/2026 23:45:36] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-04-15 23:45:38,978 - INFO - 127.0.0.1 - - [15/Apr/2026 23:45:38] "GET /auth/login HTTP/1.1" 200 -
+2026-04-15 23:45:39,009 - INFO - 127.0.0.1 - - [15/Apr/2026 23:45:39] "[36mGET /static/css/login_style.css HTTP/1.1[0m" 304 -
+2026-04-15 23:45:39,010 - INFO - 127.0.0.1 - - [15/Apr/2026 23:45:39] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-04-15 23:46:10,458 - INFO -  * Detected change in 'D:\\HELEN\\PERSONAL\\FORMACIÓN\\++ IA - FORMACION\\BOOTCAMP - F5\\CURSO\\PROYECTO 1\\VSC_App_climatica_Python\\App_climatica_Avanzada\\app.py', reloading
+2026-04-15 23:46:10,585 - INFO -  * Restarting with stat
+2026-04-15 23:46:11,315 - WARNING -  * Debugger is active!
+2026-04-15 23:46:11,317 - INFO -  * Debugger PIN: 588-910-519
+2026-04-15 23:46:13,675 - INFO -  * Detected change in 'D:\\HELEN\\PERSONAL\\FORMACIÓN\\++ IA - FORMACION\\BOOTCAMP - F5\\CURSO\\PROYECTO 1\\VSC_App_climatica_Python\\App_climatica_Avanzada\\app.py', reloading
+2026-04-15 23:46:13,793 - INFO -  * Restarting with stat
+2026-04-15 23:58:09,834 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-15 23:58:09,835 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-15 23:58:09,835 - INFO -  * Restarting with stat
+2026-04-15 23:58:10,491 - WARNING -  * Debugger is active!
+2026-04-15 23:58:10,494 - INFO -  * Debugger PIN: 588-910-519
+2026-04-15 23:58:15,412 - INFO - 127.0.0.1 - - [15/Apr/2026 23:58:15] "GET /auth/login HTTP/1.1" 200 -
+2026-04-15 23:58:15,709 - INFO - 127.0.0.1 - - [15/Apr/2026 23:58:15] "[36mGET /static/css/login_style.css HTTP/1.1[0m" 304 -
+2026-04-15 23:58:15,712 - INFO - 127.0.0.1 - - [15/Apr/2026 23:58:15] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-04-15 23:58:20,704 - INFO - 127.0.0.1 - - [15/Apr/2026 23:58:20] "GET / HTTP/1.1" 200 -
+2026-04-15 23:58:20,721 - INFO - 127.0.0.1 - - [15/Apr/2026 23:58:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-04-15 23:58:22,898 - INFO - 127.0.0.1 - - [15/Apr/2026 23:58:22] "GET /auth/login HTTP/1.1" 200 -
+2026-04-15 23:58:22,920 - INFO - 127.0.0.1 - - [15/Apr/2026 23:58:22] "[36mGET /static/css/login_style.css HTTP/1.1[0m" 304 -
+2026-04-15 23:58:22,926 - INFO - 127.0.0.1 - - [15/Apr/2026 23:58:22] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-04-15 23:58:31,966 - INFO - 127.0.0.1 - - [15/Apr/2026 23:58:31] "[35m[1mPOST /auth/login HTTP/1.1[0m" 500 -
+2026-04-15 23:58:31,998 - INFO - 127.0.0.1 - - [15/Apr/2026 23:58:31] "GET /auth/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-04-15 23:58:31,998 - INFO - 127.0.0.1 - - [15/Apr/2026 23:58:31] "GET /auth/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-04-15 23:58:32,039 - INFO - 127.0.0.1 - - [15/Apr/2026 23:58:32] "GET /auth/login?__debugger__=yes&cmd=resource&f=console.png&s=bLnj3YGXP7DNyuigWp4l HTTP/1.1" 200 -
+2026-04-15 23:58:32,047 - INFO - 127.0.0.1 - - [15/Apr/2026 23:58:32] "GET /auth/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-04-15 23:58:50,564 - INFO -  * Detected change in 'D:\\HELEN\\PERSONAL\\FORMACIÓN\\++ IA - FORMACION\\BOOTCAMP - F5\\CURSO\\PROYECTO 1\\VSC_App_climatica_Python\\App_climatica_Avanzada\\app.py', reloading
+2026-04-15 23:58:50,718 - INFO -  * Restarting with stat
+2026-04-15 23:58:51,415 - WARNING -  * Debugger is active!
+2026-04-15 23:58:51,417 - INFO -  * Debugger PIN: 588-910-519
+2026-04-15 23:58:55,930 - INFO - 127.0.0.1 - - [15/Apr/2026 23:58:55] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+2026-04-15 23:58:55,946 - INFO - 127.0.0.1 - - [15/Apr/2026 23:58:55] "GET /auth/login HTTP/1.1" 200 -
+2026-04-15 23:58:56,213 - INFO - 127.0.0.1 - - [15/Apr/2026 23:58:56] "[36mGET /static/css/login_style.css HTTP/1.1[0m" 304 -
+2026-04-15 23:58:56,228 - INFO - 127.0.0.1 - - [15/Apr/2026 23:58:56] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-04-15 23:59:05,325 - INFO - 127.0.0.1 - - [15/Apr/2026 23:59:05] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+2026-04-15 23:59:05,331 - INFO - 127.0.0.1 - - [15/Apr/2026 23:59:05] "GET /auth/login HTTP/1.1" 200 -
+2026-04-15 23:59:05,357 - INFO - 127.0.0.1 - - [15/Apr/2026 23:59:05] "[36mGET /static/css/login_style.css HTTP/1.1[0m" 304 -
+2026-04-15 23:59:05,358 - INFO - 127.0.0.1 - - [15/Apr/2026 23:59:05] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-04-15 23:59:18,841 - INFO - 127.0.0.1 - - [15/Apr/2026 23:59:18] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+2026-04-15 23:59:18,846 - INFO - 127.0.0.1 - - [15/Apr/2026 23:59:18] "GET /auth/login HTTP/1.1" 200 -
+2026-04-15 23:59:18,873 - INFO - 127.0.0.1 - - [15/Apr/2026 23:59:18] "[36mGET /static/css/login_style.css HTTP/1.1[0m" 304 -
+2026-04-15 23:59:18,874 - INFO - 127.0.0.1 - - [15/Apr/2026 23:59:18] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-04-16 00:02:42,252 - INFO -  * Detected change in 'D:\\HELEN\\PERSONAL\\FORMACIÓN\\++ IA - FORMACION\\BOOTCAMP - F5\\CURSO\\PROYECTO 1\\VSC_App_climatica_Python\\App_climatica_Avanzada\\app.py', reloading
+2026-04-16 00:02:42,389 - INFO -  * Restarting with stat
+2026-04-16 00:02:43,094 - WARNING -  * Debugger is active!
+2026-04-16 00:02:43,096 - INFO -  * Debugger PIN: 588-910-519
+2026-04-16 00:02:43,247 - INFO -  * Detected change in 'D:\\HELEN\\PERSONAL\\FORMACIÓN\\++ IA - FORMACION\\BOOTCAMP - F5\\CURSO\\PROYECTO 1\\VSC_App_climatica_Python\\App_climatica_Avanzada\\app.py', reloading
+2026-04-16 00:02:43,378 - INFO -  * Restarting with stat
+2026-04-16 00:02:44,059 - WARNING -  * Debugger is active!
+2026-04-16 00:02:44,061 - INFO -  * Debugger PIN: 588-910-519
+2026-04-16 00:02:47,285 - INFO - 127.0.0.1 - - [16/Apr/2026 00:02:47] "GET /auth/login HTTP/1.1" 200 -
+2026-04-16 00:02:47,528 - INFO - 127.0.0.1 - - [16/Apr/2026 00:02:47] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-04-16 00:02:47,529 - INFO - 127.0.0.1 - - [16/Apr/2026 00:02:47] "[36mGET /static/css/login_style.css HTTP/1.1[0m" 304 -
+2026-04-16 00:02:58,038 - INFO - 127.0.0.1 - - [16/Apr/2026 00:02:58] "POST /auth/login HTTP/1.1" 200 -
+2026-04-16 00:02:58,065 - INFO - 127.0.0.1 - - [16/Apr/2026 00:02:58] "[36mGET /static/css/login_style.css HTTP/1.1[0m" 304 -
+2026-04-16 00:02:58,066 - INFO - 127.0.0.1 - - [16/Apr/2026 00:02:58] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-04-16 00:03:06,735 - INFO -  * Detected change in 'D:\\HELEN\\PERSONAL\\FORMACIÓN\\++ IA - FORMACION\\BOOTCAMP - F5\\CURSO\\PROYECTO 1\\VSC_App_climatica_Python\\App_climatica_Avanzada\\app.py', reloading
+2026-04-16 00:03:06,855 - INFO -  * Restarting with stat
+2026-04-16 00:03:07,561 - WARNING -  * Debugger is active!
+2026-04-16 00:03:07,563 - INFO -  * Debugger PIN: 588-910-519
+2026-04-16 00:03:16,468 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-16 00:03:16,468 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-16 00:03:16,469 - INFO -  * Restarting with stat
+2026-04-16 00:03:17,131 - WARNING -  * Debugger is active!
+2026-04-16 00:03:17,133 - INFO -  * Debugger PIN: 588-910-519
+2026-04-16 00:03:21,399 - INFO - 127.0.0.1 - - [16/Apr/2026 00:03:21] "POST /auth/login HTTP/1.1" 200 -
+2026-04-16 00:03:21,592 - INFO - 127.0.0.1 - - [16/Apr/2026 00:03:21] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-04-16 00:03:21,593 - INFO - 127.0.0.1 - - [16/Apr/2026 00:03:21] "[36mGET /static/css/login_style.css HTTP/1.1[0m" 304 -
+2026-04-16 00:03:29,908 - INFO - 127.0.0.1 - - [16/Apr/2026 00:03:29] "POST /auth/login HTTP/1.1" 200 -
+2026-04-16 00:03:29,936 - INFO - 127.0.0.1 - - [16/Apr/2026 00:03:29] "[36mGET /static/css/login_style.css HTTP/1.1[0m" 304 -
+2026-04-16 00:03:29,937 - INFO - 127.0.0.1 - - [16/Apr/2026 00:03:29] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-04-16 00:03:53,912 - INFO -  * Detected change in 'D:\\HELEN\\PERSONAL\\FORMACIÓN\\++ IA - FORMACION\\BOOTCAMP - F5\\CURSO\\PROYECTO 1\\VSC_App_climatica_Python\\App_climatica_Avanzada\\app.py', reloading
+2026-04-16 00:03:54,042 - INFO -  * Restarting with stat
+2026-04-16 00:03:54,791 - WARNING -  * Debugger is active!
+2026-04-16 00:03:54,793 - INFO -  * Debugger PIN: 588-910-519
+2026-04-16 00:04:02,650 - INFO -  * Detected change in 'D:\\HELEN\\PERSONAL\\FORMACIÓN\\++ IA - FORMACION\\BOOTCAMP - F5\\CURSO\\PROYECTO 1\\VSC_App_climatica_Python\\App_climatica_Avanzada\\app.py', reloading
+2026-04-16 00:04:02,783 - INFO -  * Restarting with stat
+2026-04-16 00:04:03,467 - WARNING -  * Debugger is active!
+2026-04-16 00:04:03,469 - INFO -  * Debugger PIN: 588-910-519
+2026-04-16 00:04:05,836 - INFO -  * Detected change in 'D:\\HELEN\\PERSONAL\\FORMACIÓN\\++ IA - FORMACION\\BOOTCAMP - F5\\CURSO\\PROYECTO 1\\VSC_App_climatica_Python\\App_climatica_Avanzada\\app.py', reloading
+2026-04-16 00:04:05,973 - INFO -  * Restarting with stat
+2026-04-16 00:04:06,658 - WARNING -  * Debugger is active!
+2026-04-16 00:04:06,661 - INFO -  * Debugger PIN: 588-910-519
+2026-04-16 00:04:15,636 - INFO -  * Detected change in 'D:\\HELEN\\PERSONAL\\FORMACIÓN\\++ IA - FORMACION\\BOOTCAMP - F5\\CURSO\\PROYECTO 1\\VSC_App_climatica_Python\\App_climatica_Avanzada\\app.py', reloading
+2026-04-16 00:04:15,774 - INFO -  * Restarting with stat
+2026-04-16 00:04:16,446 - WARNING -  * Debugger is active!
+2026-04-16 00:04:16,448 - INFO -  * Debugger PIN: 588-910-519
+2026-04-16 00:04:16,603 - INFO -  * Detected change in 'D:\\HELEN\\PERSONAL\\FORMACIÓN\\++ IA - FORMACION\\BOOTCAMP - F5\\CURSO\\PROYECTO 1\\VSC_App_climatica_Python\\App_climatica_Avanzada\\app.py', reloading
+2026-04-16 00:04:16,725 - INFO -  * Restarting with stat
+2026-04-16 00:04:17,363 - WARNING -  * Debugger is active!
+2026-04-16 00:04:17,365 - INFO -  * Debugger PIN: 588-910-519
+2026-04-16 00:04:37,280 - INFO - 127.0.0.1 - - [16/Apr/2026 00:04:37] "POST /auth/login HTTP/1.1" 200 -
+2026-04-16 00:04:37,537 - INFO - 127.0.0.1 - - [16/Apr/2026 00:04:37] "[36mGET /static/css/login_style.css HTTP/1.1[0m" 304 -
+2026-04-16 00:04:37,542 - INFO - 127.0.0.1 - - [16/Apr/2026 00:04:37] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-04-16 00:04:43,217 - INFO - 127.0.0.1 - - [16/Apr/2026 00:04:43] "POST /auth/login HTTP/1.1" 200 -
+2026-04-16 00:04:43,245 - INFO - 127.0.0.1 - - [16/Apr/2026 00:04:43] "[36mGET /static/css/login_style.css HTTP/1.1[0m" 304 -
+2026-04-16 00:04:43,247 - INFO - 127.0.0.1 - - [16/Apr/2026 00:04:43] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-04-16 00:04:48,215 - INFO -  * Detected change in 'D:\\HELEN\\PERSONAL\\FORMACIÓN\\++ IA - FORMACION\\BOOTCAMP - F5\\CURSO\\PROYECTO 1\\VSC_App_climatica_Python\\App_climatica_Avanzada\\app.py', reloading
+2026-04-16 00:04:48,341 - INFO -  * Restarting with stat
+2026-04-16 00:04:49,000 - WARNING -  * Debugger is active!
+2026-04-16 00:04:49,002 - INFO -  * Debugger PIN: 588-910-519
+2026-04-16 00:04:52,469 - INFO -  * Detected change in 'D:\\HELEN\\PERSONAL\\FORMACIÓN\\++ IA - FORMACION\\BOOTCAMP - F5\\CURSO\\PROYECTO 1\\VSC_App_climatica_Python\\App_climatica_Avanzada\\app.py', reloading
+2026-04-16 00:04:52,621 - INFO -  * Restarting with stat
+2026-04-16 00:04:53,299 - WARNING -  * Debugger is active!
+2026-04-16 00:04:53,302 - INFO -  * Debugger PIN: 588-910-519
+2026-04-16 00:04:54,555 - INFO -  * Detected change in 'D:\\HELEN\\PERSONAL\\FORMACIÓN\\++ IA - FORMACION\\BOOTCAMP - F5\\CURSO\\PROYECTO 1\\VSC_App_climatica_Python\\App_climatica_Avanzada\\app.py', reloading
+2026-04-16 00:04:54,677 - INFO -  * Restarting with stat
+2026-04-16 00:04:55,358 - WARNING -  * Debugger is active!
+2026-04-16 00:04:55,360 - INFO -  * Debugger PIN: 588-910-519
+2026-04-16 00:05:42,575 - INFO -  * Detected change in 'D:\\HELEN\\PERSONAL\\FORMACIÓN\\++ IA - FORMACION\\BOOTCAMP - F5\\CURSO\\PROYECTO 1\\VSC_App_climatica_Python\\App_climatica_Avanzada\\app.py', reloading
+2026-04-16 00:05:42,705 - INFO -  * Restarting with stat
+2026-04-16 00:05:43,404 - WARNING -  * Debugger is active!
+2026-04-16 00:05:43,406 - INFO -  * Debugger PIN: 588-910-519
+2026-04-16 00:06:45,255 - INFO -  * Detected change in 'D:\\HELEN\\PERSONAL\\FORMACIÓN\\++ IA - FORMACION\\BOOTCAMP - F5\\CURSO\\PROYECTO 1\\VSC_App_climatica_Python\\App_climatica_Avanzada\\app.py', reloading
+2026-04-16 00:06:45,386 - INFO -  * Restarting with stat
+2026-04-16 00:06:46,115 - WARNING -  * Debugger is active!
+2026-04-16 00:06:46,118 - INFO -  * Debugger PIN: 588-910-519
+2026-04-16 00:06:47,392 - INFO -  * Detected change in 'D:\\HELEN\\PERSONAL\\FORMACIÓN\\++ IA - FORMACION\\BOOTCAMP - F5\\CURSO\\PROYECTO 1\\VSC_App_climatica_Python\\App_climatica_Avanzada\\app.py', reloading
+2026-04-16 00:06:47,522 - INFO -  * Restarting with stat
+2026-04-16 00:06:48,181 - WARNING -  * Debugger is active!
+2026-04-16 00:06:48,184 - INFO -  * Debugger PIN: 588-910-519
+2026-04-16 00:06:49,442 - INFO -  * Detected change in 'D:\\HELEN\\PERSONAL\\FORMACIÓN\\++ IA - FORMACION\\BOOTCAMP - F5\\CURSO\\PROYECTO 1\\VSC_App_climatica_Python\\App_climatica_Avanzada\\app.py', reloading
+2026-04-16 00:06:49,581 - INFO -  * Restarting with stat
+2026-04-16 00:06:50,277 - WARNING -  * Debugger is active!
+2026-04-16 00:06:50,279 - INFO -  * Debugger PIN: 588-910-519
+2026-04-16 00:07:13,449 - INFO - 127.0.0.1 - - [16/Apr/2026 00:07:13] "[35m[1mPOST /auth/login HTTP/1.1[0m" 500 -
+2026-04-16 00:07:13,713 - INFO - 127.0.0.1 - - [16/Apr/2026 00:07:13] "[36mGET /auth/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-04-16 00:07:13,714 - INFO - 127.0.0.1 - - [16/Apr/2026 00:07:13] "[36mGET /auth/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-04-16 00:07:13,726 - INFO - 127.0.0.1 - - [16/Apr/2026 00:07:13] "GET /auth/login?__debugger__=yes&cmd=resource&f=console.png&s=C2gBknbK8CfK06N7XTOw HTTP/1.1" 200 -
+2026-04-16 00:07:13,731 - INFO - 127.0.0.1 - - [16/Apr/2026 00:07:13] "[36mGET /auth/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-04-16 00:08:21,874 - INFO -  * Detected change in 'D:\\HELEN\\PERSONAL\\FORMACIÓN\\++ IA - FORMACION\\BOOTCAMP - F5\\CURSO\\PROYECTO 1\\VSC_App_climatica_Python\\App_climatica_Avanzada\\app.py', reloading
+2026-04-16 00:09:46,308 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-16 00:09:46,309 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-16 00:09:46,309 - INFO -  * Restarting with stat
+2026-04-16 00:09:46,956 - WARNING -  * Debugger is active!
+2026-04-16 00:09:46,958 - INFO -  * Debugger PIN: 588-910-519
+2026-04-16 00:09:50,314 - INFO - 127.0.0.1 - - [16/Apr/2026 00:09:50] "GET / HTTP/1.1" 200 -
+2026-04-16 00:09:50,518 - INFO - 127.0.0.1 - - [16/Apr/2026 00:09:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-04-16 00:09:52,348 - INFO - 127.0.0.1 - - [16/Apr/2026 00:09:52] "GET /auth/login HTTP/1.1" 200 -
+2026-04-16 00:09:52,381 - INFO - 127.0.0.1 - - [16/Apr/2026 00:09:52] "[36mGET /static/css/login_style.css HTTP/1.1[0m" 304 -
+2026-04-16 00:09:52,385 - INFO - 127.0.0.1 - - [16/Apr/2026 00:09:52] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-04-16 00:09:59,180 - INFO - 127.0.0.1 - - [16/Apr/2026 00:09:59] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+2026-04-16 00:09:59,186 - INFO - 127.0.0.1 - - [16/Apr/2026 00:09:59] "GET /auth/login HTTP/1.1" 200 -
+2026-04-16 00:09:59,215 - INFO - 127.0.0.1 - - [16/Apr/2026 00:09:59] "[36mGET /static/css/login_style.css HTTP/1.1[0m" 304 -
+2026-04-16 00:09:59,218 - INFO - 127.0.0.1 - - [16/Apr/2026 00:09:59] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-04-16 00:14:27,464 - INFO - 127.0.0.1 - - [16/Apr/2026 00:14:27] "GET /auth/login HTTP/1.1" 200 -
+2026-04-16 00:14:27,489 - INFO - 127.0.0.1 - - [16/Apr/2026 00:14:27] "GET /static/css/login_style.css HTTP/1.1" 200 -
+2026-04-16 00:14:27,490 - INFO - 127.0.0.1 - - [16/Apr/2026 00:14:27] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-04-16 00:14:34,633 - INFO - 127.0.0.1 - - [16/Apr/2026 00:14:34] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+2026-04-16 00:14:34,639 - INFO - 127.0.0.1 - - [16/Apr/2026 00:14:34] "GET /auth/login HTTP/1.1" 200 -
+2026-04-16 00:14:34,669 - INFO - 127.0.0.1 - - [16/Apr/2026 00:14:34] "[36mGET /static/css/login_style.css HTTP/1.1[0m" 304 -
+2026-04-16 00:14:34,671 - INFO - 127.0.0.1 - - [16/Apr/2026 00:14:34] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-04-16 00:17:09,036 - INFO - 127.0.0.1 - - [16/Apr/2026 00:17:09] "GET /auth/login HTTP/1.1" 200 -
+2026-04-16 00:17:09,067 - INFO - 127.0.0.1 - - [16/Apr/2026 00:17:09] "[36mGET /static/css/login_style.css HTTP/1.1[0m" 304 -
+2026-04-16 00:17:09,069 - INFO - 127.0.0.1 - - [16/Apr/2026 00:17:09] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
+2026-04-16 00:17:15,984 - INFO - 127.0.0.1 - - [16/Apr/2026 00:17:15] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+2026-04-16 00:17:15,991 - INFO - 127.0.0.1 - - [16/Apr/2026 00:17:15] "GET /auth/login HTTP/1.1" 200 -
+2026-04-16 00:17:16,020 - INFO - 127.0.0.1 - - [16/Apr/2026 00:17:16] "[36mGET /static/css/login_style.css HTTP/1.1[0m" 304 -
+2026-04-16 00:17:16,021 - INFO - 127.0.0.1 - - [16/Apr/2026 00:17:16] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
