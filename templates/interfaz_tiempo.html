@@ -25,7 +25,7 @@
       {% if alertas %}
         <div class="alertas-box">
           {% for alerta in alertas %}
-            <p class="mensaje-alerta">{{ alerta }}</p>
+            <p class="mensaje-alerta">{{ alerta | safe }}</p>
           {% endfor %}
         </div>
       {% endif %}
@@ -46,7 +46,6 @@
             <option value="Sur">Sur</option>
             <option value="Este">Este</option>
             <option value="Oeste">Oeste</option>
-            
           </select>
         </div>
 

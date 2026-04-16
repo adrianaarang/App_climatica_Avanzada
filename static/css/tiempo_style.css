@@ -185,21 +185,32 @@ input:focus, select:focus {
   background-color: #fecaca;
 }
 
-/* =========================
-   RESPONSIVO (MÓVIL)
-   ========================= */
-@media (max-width: 600px) {
-  #weatherForm {
-    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
-  }
-  
-  .btn-primary {
-    grid-column: span 1;
-  }
-  
-  .actions {
-    flex-direction: column;
-  }
-  
-  .btn-secondary, .btn-danger {
-    text-align: center
+.mensaje-alerta {
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Diferentes fondos según tipo */
+.mensaje-alerta:has(.alerta-roja) {
+  background-color: #fee2e2;
+  border: 1px solid #fecaca;
+}
+
+.mensaje-alerta:has(.alerta-naranja) {
+  background-color: #ffedd5;
+  border: 1px solid #fdba74;
+}
+
+.mensaje-alerta:has(.alerta-amarilla) {
+  background-color: #fef9c3;
+  border: 1px solid #fde68a;
+}
+
+.mensaje-alerta:has(.alerta-verde) {
+  background-color: #dcfce7;
+  border: 1px solid #bbf7d0;
+}
