@@ -262,7 +262,7 @@
 2026-04-15 21:03:11,672 - INFO - 127.0.0.1 - - [15/Apr/2026 21:03:11] "GET /auth/login HTTP/1.1" 200 -
 2026-04-15 21:03:11,725 - INFO - 127.0.0.1 - - [15/Apr/2026 21:03:11] "[36mGET /static/css/login_style.css HTTP/1.1[0m" 304 -
 2026-04-15 21:03:11,726 - INFO - 127.0.0.1 - - [15/Apr/2026 21:03:11] "[36mGET /static/js/auth.js HTTP/1.1[0m" 304 -
-2026-04-15 21:03:16,445 - INFO - 127.0.0.1 - - [15/Apr/2026 21:03:16] "[33mGET /ç HTTP/1.1[0m" 404 -
+2026-04-15 21:03:16,445 - INFO - 127.0.0.1 - - [15/Apr/2026 21:03:16] "[33mGET /Ã§ HTTP/1.1[0m" 404 -
 2026-04-15 21:03:19,090 - INFO - 127.0.0.1 - - [15/Apr/2026 21:03:19] "GET / HTTP/1.1" 200 -
 2026-04-15 21:03:19,098 - INFO - 127.0.0.1 - - [15/Apr/2026 21:03:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
 2026-04-15 21:03:20,751 - INFO - 127.0.0.1 - - [15/Apr/2026 21:03:20] "GET /auth/register HTTP/1.1" 200 -
@@ -535,7 +535,7 @@
 2026-04-16 09:54:06,487 - INFO - Consulta por zona: Centro -> 5 resultados
 2026-04-16 09:54:06,489 - INFO - 127.0.0.1 - - [16/Apr/2026 09:54:06] "POST /consulta HTTP/1.1" 200 -
 2026-04-16 09:54:06,515 - INFO - 127.0.0.1 - - [16/Apr/2026 09:54:06] "[36mGET /static/css/consulta_style.css HTTP/1.1[0m" 304 -
-2026-04-16 09:54:07,956 - INFO - Cálculo de estadísticas con 5 registros
+2026-04-16 09:54:07,956 - INFO - CÃ¡lculo de estadÃ­sticas con 5 registros
 2026-04-16 09:54:12,277 - INFO - 127.0.0.1 - - [16/Apr/2026 09:54:12] "GET /estadisticas HTTP/1.1" 200 -
 2026-04-16 09:54:12,334 - INFO - 127.0.0.1 - - [16/Apr/2026 09:54:12] "GET /static/img/temperatura_media.png HTTP/1.1" 200 -
 2026-04-16 09:54:12,344 - INFO - 127.0.0.1 - - [16/Apr/2026 09:54:12] "GET /static/img/humedad_media.png HTTP/1.1" 200 -

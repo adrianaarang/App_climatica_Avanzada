@@ -1,16 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. Intentamos obtener los formularios (Asegúrate de poner estos IDs en tu HTML)
+    // 1. Captura de formularios
     const loginForm = document.getElementById("loginForm");
     const registroForm = document.getElementById("registroForm");
 
-    // Función genérica para mostrar errores
+    // 2. Utilidades de validación
     const showError = (elementId, message) => {
         const errorElement = document.getElementById(elementId);
-        if (errorElement) errorElement.textContent = message;
+        if (errorElement) {
+            errorElement.textContent = message;
+            errorElement.style.color = "red"; // Un poco de estilo rápido
+        }
     };
 
     const validateEmail = (email) => {
-        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        // Combinamos la regex más completa que teníais
+        return /^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w+$/.test(email);
     };
 
     // --- LÓGICA PARA LOGIN ---
@@ -49,15 +53,15 @@ document.addEventListener("DOMContentLoaded", () => {
             showError("confirmPasswordError", "");
 
             if (!validateEmail(email)) {
-                showError("emailError", "Email no válido.");
+                showError("emailError", "Email no válido (ejemplo@dominio.com).");
                 valid = false;
             }
             if (password.length < 6) {
-                showError("passwordError", "Mínimo 6 caracteres.");
+                showError("passwordError", "La contraseña debe tener al menos 6 caracteres.");
                 valid = false;
             }
             if (password !== confirmPassword) {
-                showError("confirmPasswordError", "Las contraseñas no coinciden.");
+                showError("confirmPasswordError", "¡Cuidado! Las contraseñas no coinciden.");
                 valid = false;
             }
 
