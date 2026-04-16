@@ -3,58 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interfaz Tiempo | App Climática</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <title>Consulta por zona | App Climática</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/consulta_style.css') }}">
 </head>
 <body>
 
   <main class="container">
-
     <section class="weather-card">
-      <h1>Registro de datos meteorológicos</h1>
-      <p class="subtitle">Introduce los datos del clima</p>
+      <h1>Consulta de registros por zona</h1>
+      <p class="subtitle">Selecciona una zona para ver sus registros meteorológicos</p>
 
-      {% if usuario %}
-        <p class="usuario-activo">Sesión iniciada como: <strong>{{ usuario }}</strong></p>
-      {% endif %}
-
-      {% if mensaje %}
-        <p class="mensaje-ok">{{ mensaje }}</p>
-      {% endif %}
-
-      {% if alertas %}
-        <div class="alertas-box">
-          {% for alerta in alertas %}
-            <p class="mensaje-alerta">{{ alerta }}</p>
-          {% endfor %}
-        </div>
-      {% endif %}
-
-      <form id="weatherForm" action="{{ url_for('guardar_datos') }}" method="POST">
-
-
+      <form id="consultaForm" action="{{ url_for('consulta') }}" method="POST">
         <div class="form-group">
           <label for="zona">Zona ciudad</label>
           <select id="zona" name="zona" required>
             <option value="">Selecciona una zona de la ciudad</option>
-            <option value="Centro">Centro</option>
-            <option value="Norte">Norte</option>
-            <option value="Sur">Sur</option>
-            <option value="Este">Este</option>
-            <option value="Oeste">Oeste</option>
+            <option value="Centro" {% if zona == "Centro" %}selected{% endif %}>Centro</option>
+            <option value="Norte" {% if zona == "Norte" %}selected{% endif %}>Norte</option>
+            <option value="Sur" {% if zona == "Sur" %}selected{% endif %}>Sur</option>
+            <option value="Este" {% if zona == "Este" %}selected{% endif %}>Este</option>
+            <option value="Oeste" {% if zona == "Oeste" %}selected{% endif %}>Oeste</option>
           </select>
         </div>
+git checkout --ours data/usuarios.json
+git checkout --ours logs/app.log
+        <button type="submit" class="btn-primary">Consultar registros</button>
+      </form>
 
+      {% if zona %}
+        <div class="resultados-box">
+          <h2>Resultados para la zona: {{ zona }}</h2>
+
+          {% if registros %}
+            <table class="tabla-registros">
+              <thead>
+                <tr>
+                  <th>Fecha</th>
+                  <th>Zona</th>
+                  <th>Temperatura</th>
+                  <th>Humedad</th>
+                  <th>Viento</th>
+                  <th>Lluvia</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for registro in registros %}
+                  <tr>
+                    <td>{{ registro.fecha or registro["fecha"] }}</td>
+                    <td>{{ registro.zona or registro["zona"] }}</td>
+                    <td>{{ registro.temperatura or registro["temperatura"] }} ºC</td>
+                    <td>{{ registro.humedad or registro["humedad"] }} %</td>
+                    <td>{{ registro.viento or registro["viento"] }} km/h</td>
+                    <td>{{ registro.lluvia or registro["lluvia"] }} mm</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          {% else %}
+            <p class="mensaje-vacio">No hay registros para esta zona.</p>
+          {% endif %}
+        </div>
+      {% endif %}
 
       <div class="actions">
-        <a href="{{ url_for('consulta') }}" class="btn-secondary">Consultar por zona</a>
+        <a href="{{ url_for('interfaz_tiempo') }}" class="btn-secondary">Volver al registro</a>
         <a href="{{ url_for('estadisticas') }}" class="btn-secondary">Ver estadísticas</a>
         <a href="{{ url_for('logout') }}" class="btn-danger">Cerrar sesión</a>
       </div>
     </section>
-
   </main>
 
-  <script src="{{ url_for('static', filename='js/weather.js') }}"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, session
 from controllers.auth_controller import AuthController
 from controllers.weather_controller import WeatherController
-from controllers.alert_controller import AlertController 
+from controllers.alert_controller import AlertController
 from utils.logger_config import configurar_logger
 
 logger = configurar_logger()

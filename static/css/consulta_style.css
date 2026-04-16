@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #f0f7f7, #e6f2f3);
+  color: #1f2937;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 30px 0;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.weather-card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 1000px;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 15px 35px rgba(57, 149, 157, 0.15);
+}
+
+h1 {
+  color: rgba(57, 149, 157, 0.9);
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+#consultaForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #374151;
+  font-size: 0.95rem;
+}
+
+select {
+  padding: 12px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+}
+
+select:focus {
+  outline: none;
+  border-color: rgba(57, 149, 157, 0.6);
+  box-shadow: 0 0 0 4px rgba(57, 149, 157, 0.1);
+}
+
+.btn-primary {
+  width: 100%;
+  background-color: rgba(57, 149, 157, 0.873);
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 14px;
+  font-size: 1.05rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: rgba(45, 120, 126, 1);
+  transform: translateY(-2px);
+}
+
+.resultados-box {
+  margin-top: 20px;
+}
+
+.resultados-box h2 {
+  margin-bottom: 16px;
+  color: #374151;
+  font-size: 1.2rem;
+}
+
+.tabla-registros {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.tabla-registros thead {
+  background-color: rgba(57, 149, 157, 0.12);
+}
+
+.tabla-registros th,
+.tabla-registros td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tabla-registros th {
+  color: #374151;
+  font-weight: 700;
+}
+
+.tabla-registros tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+.mensaje-vacio {
+  background-color: #fffbeb;
+  color: #92400e;
+  border: 1px solid #fde68a;
+  padding: 12px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #f3f4f6;
+  flex-wrap: wrap;
+}
+
+.btn-secondary,
+.btn-danger {
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary {
+  background-color: #f3f4f6;
+  color: #4b5563;
+}
+
+.btn-secondary:hover {
+  background-color: #e5e7eb;
+}
+
+.btn-danger {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+.btn-danger:hover {
+  background-color: #fecaca;
+}
+
+@media (max-width: 768px) {
+  .weather-card {
+    padding: 24px;
+  }
+
+  .tabla-registros {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .btn-secondary,
+  .btn-danger {
+    text-align: center;
+  }
+}

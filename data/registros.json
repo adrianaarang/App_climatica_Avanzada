@@ -1,1 +1,57 @@
-[]
+[
+    {
+        "fecha": "2024-03-23",
+        "zona": "Centro",
+        "temperatura": 23.0,
+        "humedad": 2.0,
+        "viento": 2.0,
+        "lluvia": 2.0,
+        "alertas": [
+            "\u001b[92mNivel Verde\u001b[0m (Sin riesgo)."
+        ]
+    },
+    {
+        "fecha": "2024-03-23",
+        "zona": "Centro",
+        "temperatura": 43.0,
+        "humedad": 2.0,
+        "viento": 2.0,
+        "lluvia": 2.0,
+        "alertas": [
+            "<span class=\"alerta-roja\">ALERTA ROJA:</span> Riesgo extremo por calor - Riesgo para la salud muy alto."
+        ]
+    },
+    {
+        "fecha": "2024-02-12",
+        "zona": "Centro",
+        "temperatura": 43.0,
+        "humedad": 2.0,
+        "viento": 1.0,
+        "lluvia": 2.0,
+        "alertas": [
+            "<span class=\"alerta-roja\">ALERTA ROJA:</span> Riesgo extremo por calor - Riesgo para la salud muy alto."
+        ]
+    },
+    {
+        "fecha": "2001-01-01",
+        "zona": "Centro",
+        "temperatura": 11.0,
+        "humedad": 11.0,
+        "viento": 1.0,
+        "lluvia": 1.0,
+        "alertas": [
+            "<span class=\"alerta-verde\">Nivel Verde:</span> Sin riesgo."
+        ]
+    },
+    {
+        "fecha": "2022-08-01",
+        "zona": "Centro",
+        "temperatura": 44.0,
+        "humedad": 1.0,
+        "viento": 11.0,
+        "lluvia": 1.0,
+        "alertas": [
+            "<span class=\"alerta-roja\">ALERTA ROJA:</span> Riesgo extremo por calor - Riesgo para la salud muy alto."
+        ]
+    }
+]
