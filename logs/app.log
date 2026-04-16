@@ -568,3 +568,20 @@
 2026-04-16 10:34:34,927 - INFO - Consulta por zona: Centro -> 5 resultados
 2026-04-16 10:34:34,927 - INFO - 127.0.0.1 - - [16/Apr/2026 10:34:34] "POST /consulta HTTP/1.1" 200 -
 2026-04-16 10:34:34,940 - INFO - 127.0.0.1 - - [16/Apr/2026 10:34:34] "[36mGET /static/css/consulta_style.css HTTP/1.1[0m" 304 -
+2026-04-16 10:35:50,015 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-16 10:35:50,015 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-16 10:35:50,016 - INFO -  * Restarting with stat
+2026-04-16 10:35:50,829 - WARNING -  * Debugger is active!
+2026-04-16 10:35:50,831 - INFO -  * Debugger PIN: 145-980-433
+2026-04-16 10:35:55,797 - INFO - 127.0.0.1 - - [16/Apr/2026 10:35:55] "GET /consulta HTTP/1.1" 200 -
+2026-04-16 10:35:55,840 - INFO - 127.0.0.1 - - [16/Apr/2026 10:35:55] "[36mGET /static/css/consulta_style.css HTTP/1.1[0m" 304 -
+2026-04-16 10:35:58,914 - INFO - Consulta por zona: Centro -> 5 resultados
+2026-04-16 10:35:58,914 - INFO - 127.0.0.1 - - [16/Apr/2026 10:35:58] "POST /consulta HTTP/1.1" 200 -
+2026-04-16 10:35:58,928 - INFO - 127.0.0.1 - - [16/Apr/2026 10:35:58] "[36mGET /static/css/consulta_style.css HTTP/1.1[0m" 304 -
+2026-04-16 10:36:00,533 - INFO - Cálculo de estadísticas con 5 registros
+2026-04-16 10:36:01,144 - INFO - 127.0.0.1 - - [16/Apr/2026 10:36:01] "GET /estadisticas HTTP/1.1" 200 -
+2026-04-16 10:36:01,166 - INFO - 127.0.0.1 - - [16/Apr/2026 10:36:01] "GET /static/img/temperatura_media.png HTTP/1.1" 200 -
+2026-04-16 10:36:01,168 - INFO - 127.0.0.1 - - [16/Apr/2026 10:36:01] "GET /static/img/humedad_media.png HTTP/1.1" 200 -
+2026-04-16 10:36:01,168 - INFO - 127.0.0.1 - - [16/Apr/2026 10:36:01] "GET /static/img/registros_por_zona.png HTTP/1.1" 200 -
+2026-04-16 10:36:05,651 - INFO - 127.0.0.1 - - [16/Apr/2026 10:36:05] "GET /consulta HTTP/1.1" 200 -
