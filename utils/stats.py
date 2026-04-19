@@ -2,6 +2,8 @@
 import pandas as pd
 
 # Importamos matplotlib para generar gráficas
+import matplotlib
+matplotlib.use('Agg')  # backend sin pantalla para servidores
 import matplotlib.pyplot as plt
 
 # Importamos os para crear carpetas si no existen
