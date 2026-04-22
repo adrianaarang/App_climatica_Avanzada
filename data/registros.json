@@ -1,57 +1,920 @@
 [
-    {
-        "fecha": "2024-03-23",
-        "zona": "Centro",
-        "temperatura": 23.0,
-        "humedad": 2.0,
-        "viento": 2.0,
-        "lluvia": 2.0,
-        "alertas": [
-            "\u001b[92mNivel Verde\u001b[0m (Sin riesgo)."
-        ]
-    },
-    {
-        "fecha": "2024-03-23",
-        "zona": "Centro",
-        "temperatura": 43.0,
-        "humedad": 2.0,
-        "viento": 2.0,
-        "lluvia": 2.0,
-        "alertas": [
-            "<span class=\"alerta-roja\">ALERTA ROJA:</span> Riesgo extremo por calor - Riesgo para la salud muy alto."
-        ]
-    },
-    {
-        "fecha": "2024-02-12",
-        "zona": "Centro",
-        "temperatura": 43.0,
-        "humedad": 2.0,
-        "viento": 1.0,
-        "lluvia": 2.0,
-        "alertas": [
-            "<span class=\"alerta-roja\">ALERTA ROJA:</span> Riesgo extremo por calor - Riesgo para la salud muy alto."
-        ]
-    },
-    {
-        "fecha": "2001-01-01",
-        "zona": "Centro",
-        "temperatura": 11.0,
-        "humedad": 11.0,
-        "viento": 1.0,
-        "lluvia": 1.0,
-        "alertas": [
-            "<span class=\"alerta-verde\">Nivel Verde:</span> Sin riesgo."
-        ]
-    },
-    {
-        "fecha": "2022-08-01",
-        "zona": "Centro",
-        "temperatura": 44.0,
-        "humedad": 1.0,
-        "viento": 11.0,
-        "lluvia": 1.0,
-        "alertas": [
-            "<span class=\"alerta-roja\">ALERTA ROJA:</span> Riesgo extremo por calor - Riesgo para la salud muy alto."
-        ]
-    }
+  {
+    "fecha": "2025-01-01",
+    "zona": "Este",
+    "temperatura": -4.2,
+    "humedad": 92.6,
+    "viento": 16.8,
+    "lluvia": 52.5,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-01-07",
+    "zona": "Sur",
+    "temperatura": 11.9,
+    "humedad": 82.0,
+    "viento": 8.5,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-01-13",
+    "zona": "Norte",
+    "temperatura": 13.4,
+    "humedad": 57.1,
+    "viento": 6.8,
+    "lluvia": 42.7,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-01-14",
+    "zona": "Centro",
+    "temperatura": 15.0,
+    "humedad": 41.4,
+    "viento": 45.0,
+    "lluvia": 77.2,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-01-16",
+    "zona": "Centro",
+    "temperatura": 9.3,
+    "humedad": 51.6,
+    "viento": 3.3,
+    "lluvia": 22.8,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-01-22",
+    "zona": "Norte",
+    "temperatura": -0.6,
+    "humedad": 86.3,
+    "viento": 21.3,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-02-01",
+    "zona": "Sur",
+    "temperatura": -1.1,
+    "humedad": 79.4,
+    "viento": 122.3,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-02-06",
+    "zona": "Norte",
+    "temperatura": 3.7,
+    "humedad": 77.7,
+    "viento": 14.9,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-02-07",
+    "zona": "Centro",
+    "temperatura": -2.8,
+    "humedad": 77.2,
+    "viento": 37.0,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-02-14",
+    "zona": "Este",
+    "temperatura": 8.5,
+    "humedad": 76.0,
+    "viento": 17.4,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-02-16",
+    "zona": "Este",
+    "temperatura": 2.3,
+    "humedad": 73.9,
+    "viento": 6.7,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-02-20",
+    "zona": "Este",
+    "temperatura": 4.2,
+    "humedad": 66.1,
+    "viento": 1.8,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-03-03",
+    "zona": "Centro",
+    "temperatura": 19.1,
+    "humedad": 30.7,
+    "viento": 23.6,
+    "lluvia": 38.3,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-03-05",
+    "zona": "Este",
+    "temperatura": 22.3,
+    "humedad": 70.7,
+    "viento": 50.5,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-03-10",
+    "zona": "Sur",
+    "temperatura": 14.8,
+    "humedad": 35.7,
+    "viento": 61.2,
+    "lluvia": 57.1,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-03-11",
+    "zona": "Norte",
+    "temperatura": 16.6,
+    "humedad": 74.1,
+    "viento": 12.8,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-03-14",
+    "zona": "Sur",
+    "temperatura": 16.9,
+    "humedad": 43.4,
+    "viento": 27.5,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-03-23",
+    "zona": "Centro",
+    "temperatura": 22.9,
+    "humedad": 72.2,
+    "viento": 42.6,
+    "lluvia": 49.3,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-04-08",
+    "zona": "Norte",
+    "temperatura": 19.8,
+    "humedad": 83.5,
+    "viento": 45.7,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-04-09",
+    "zona": "Oeste",
+    "temperatura": 17.9,
+    "humedad": 31.2,
+    "viento": 57.1,
+    "lluvia": 161.6,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-04-14",
+    "zona": "Oeste",
+    "temperatura": 0.7,
+    "humedad": 76.7,
+    "viento": 48.6,
+    "lluvia": 20.7,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-04-16",
+    "zona": "Centro",
+    "temperatura": 20.4,
+    "humedad": 49.1,
+    "viento": 100.6,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-04-19",
+    "zona": "Sur",
+    "temperatura": 17.8,
+    "humedad": 34.8,
+    "viento": 20.5,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-04-24",
+    "zona": "Sur",
+    "temperatura": 22.2,
+    "humedad": 66.9,
+    "viento": 142.5,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-05-08",
+    "zona": "Oeste",
+    "temperatura": 13.6,
+    "humedad": 47.8,
+    "viento": 23.3,
+    "lluvia": 68.3,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-05-10",
+    "zona": "Sur",
+    "temperatura": 10.6,
+    "humedad": 43.1,
+    "viento": 99.7,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-05-16",
+    "zona": "Sur",
+    "temperatura": 12.3,
+    "humedad": 60.7,
+    "viento": 32.3,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-05-20",
+    "zona": "Norte",
+    "temperatura": 4.9,
+    "humedad": 95,
+    "viento": 67.8,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-05-24",
+    "zona": "Sur",
+    "temperatura": 23.2,
+    "humedad": 44.9,
+    "viento": 127.0,
+    "lluvia": 17.5,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-05-28",
+    "zona": "Oeste",
+    "temperatura": 11.2,
+    "humedad": 60.5,
+    "viento": 136.8,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-06-05",
+    "zona": "Oeste",
+    "temperatura": 37.1,
+    "humedad": 33.0,
+    "viento": 39.9,
+    "lluvia": 40.7,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-06-11",
+    "zona": "Este",
+    "temperatura": 38.4,
+    "humedad": 35.7,
+    "viento": 3.3,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-06-11",
+    "zona": "Norte",
+    "temperatura": 34.0,
+    "humedad": 20,
+    "viento": 32.2,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-06-12",
+    "zona": "Centro",
+    "temperatura": 26.2,
+    "humedad": 80.3,
+    "viento": 5.4,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-06-14",
+    "zona": "Oeste",
+    "temperatura": 32.9,
+    "humedad": 20,
+    "viento": 15.4,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-06-18",
+    "zona": "Sur",
+    "temperatura": 29.2,
+    "humedad": 41.1,
+    "viento": 26.7,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-07-02",
+    "zona": "Norte",
+    "temperatura": 34.4,
+    "humedad": 20,
+    "viento": 5.4,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-07-05",
+    "zona": "Este",
+    "temperatura": 32.8,
+    "humedad": 20,
+    "viento": 42.9,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-07-08",
+    "zona": "Norte",
+    "temperatura": 20.7,
+    "humedad": 70.7,
+    "viento": 3.7,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-07-16",
+    "zona": "Centro",
+    "temperatura": 13.8,
+    "humedad": 57.9,
+    "viento": 134.4,
+    "lluvia": 33.4,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-07-23",
+    "zona": "Oeste",
+    "temperatura": 25.8,
+    "humedad": 46.2,
+    "viento": 6.3,
+    "lluvia": 43.3,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-07-27",
+    "zona": "Oeste",
+    "temperatura": 30.3,
+    "humedad": 56.9,
+    "viento": 37.4,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-08-02",
+    "zona": "Norte",
+    "temperatura": 27.9,
+    "humedad": 60.2,
+    "viento": 46.0,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-08-09",
+    "zona": "Oeste",
+    "temperatura": 37.3,
+    "humedad": 25.6,
+    "viento": 25.5,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-08-13",
+    "zona": "Este",
+    "temperatura": 32.8,
+    "humedad": 39.6,
+    "viento": 39.0,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-08-17",
+    "zona": "Sur",
+    "temperatura": -1.5,
+    "humedad": 70.2,
+    "viento": 43.5,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-08-17",
+    "zona": "Oeste",
+    "temperatura": 7.0,
+    "humedad": 73.8,
+    "viento": 19.6,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-08-20",
+    "zona": "Norte",
+    "temperatura": 21.1,
+    "humedad": 46.4,
+    "viento": 30.1,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-09-05",
+    "zona": "Norte",
+    "temperatura": -2.5,
+    "humedad": 54.2,
+    "viento": 109.2,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-09-08",
+    "zona": "Norte",
+    "temperatura": 23.5,
+    "humedad": 61.1,
+    "viento": 11.5,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-09-10",
+    "zona": "Este",
+    "temperatura": 11.0,
+    "humedad": 59.1,
+    "viento": 113.3,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-09-10",
+    "zona": "Norte",
+    "temperatura": 26.4,
+    "humedad": 72.5,
+    "viento": 32.7,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-09-18",
+    "zona": "Norte",
+    "temperatura": 1.8,
+    "humedad": 46.9,
+    "viento": 119.2,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-09-26",
+    "zona": "Este",
+    "temperatura": 23.4,
+    "humedad": 55.2,
+    "viento": 23.2,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-10-01",
+    "zona": "Norte",
+    "temperatura": 21.9,
+    "humedad": 73.5,
+    "viento": 111.7,
+    "lluvia": 56.8,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-10-02",
+    "zona": "Este",
+    "temperatura": 20.5,
+    "humedad": 83.4,
+    "viento": 30.0,
+    "lluvia": 61.7,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-10-13",
+    "zona": "Sur",
+    "temperatura": 21.8,
+    "humedad": 73.3,
+    "viento": 54.6,
+    "lluvia": 62.7,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-10-20",
+    "zona": "Este",
+    "temperatura": 43.4,
+    "humedad": 64.9,
+    "viento": 22.9,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-10-21",
+    "zona": "Centro",
+    "temperatura": 20.6,
+    "humedad": 53.2,
+    "viento": 58.0,
+    "lluvia": 33.3,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-10-26",
+    "zona": "Norte",
+    "temperatura": 15.1,
+    "humedad": 38.3,
+    "viento": 39.7,
+    "lluvia": 10.4,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-11-04",
+    "zona": "Norte",
+    "temperatura": 10.0,
+    "humedad": 77.7,
+    "viento": 5.1,
+    "lluvia": 187.4,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-11-09",
+    "zona": "Oeste",
+    "temperatura": 15.4,
+    "humedad": 32.3,
+    "viento": 71.5,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-11-12",
+    "zona": "Este",
+    "temperatura": 26.2,
+    "humedad": 33.8,
+    "viento": 54.2,
+    "lluvia": 44.6,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-11-23",
+    "zona": "Norte",
+    "temperatura": 16.6,
+    "humedad": 51.7,
+    "viento": 41.5,
+    "lluvia": 31.9,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-11-26",
+    "zona": "Este",
+    "temperatura": -6.2,
+    "humedad": 75.2,
+    "viento": 48.2,
+    "lluvia": 66.5,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-11-27",
+    "zona": "Centro",
+    "temperatura": 20.1,
+    "humedad": 44.5,
+    "viento": 101.1,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-12-02",
+    "zona": "Este",
+    "temperatura": 2.6,
+    "humedad": 81.3,
+    "viento": 43.7,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-12-03",
+    "zona": "Centro",
+    "temperatura": 0.8,
+    "humedad": 76.3,
+    "viento": 1.7,
+    "lluvia": 195.0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-12-11",
+    "zona": "Centro",
+    "temperatura": 28.6,
+    "humedad": 52.2,
+    "viento": 17.1,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-12-17",
+    "zona": "Oeste",
+    "temperatura": 6.3,
+    "humedad": 60.6,
+    "viento": 43.1,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-12-18",
+    "zona": "Este",
+    "temperatura": 14.9,
+    "humedad": 54.9,
+    "viento": 33.8,
+    "lluvia": 8.1,
+    "alertas": []
+  },
+  {
+    "fecha": "2025-12-20",
+    "zona": "Centro",
+    "temperatura": 12.3,
+    "humedad": 47.4,
+    "viento": 84.9,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2026-01-05",
+    "zona": "Centro",
+    "temperatura": 6.7,
+    "humedad": 76.8,
+    "viento": 136.4,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2026-01-15",
+    "zona": "Centro",
+    "temperatura": -1.6,
+    "humedad": 90.2,
+    "viento": 14.9,
+    "lluvia": 69.5,
+    "alertas": []
+  },
+  {
+    "fecha": "2026-01-19",
+    "zona": "Oeste",
+    "temperatura": -2.3,
+    "humedad": 63.5,
+    "viento": 10.8,
+    "lluvia": 72.2,
+    "alertas": []
+  },
+  {
+    "fecha": "2026-01-23",
+    "zona": "Norte",
+    "temperatura": 10.7,
+    "humedad": 54.0,
+    "viento": 18.9,
+    "lluvia": 70.7,
+    "alertas": []
+  },
+  {
+    "fecha": "2026-01-27",
+    "zona": "Oeste",
+    "temperatura": 7.7,
+    "humedad": 40.2,
+    "viento": 49.1,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2026-01-28",
+    "zona": "Oeste",
+    "temperatura": 8.7,
+    "humedad": 65.0,
+    "viento": 43.8,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2026-01-28",
+    "zona": "Norte",
+    "temperatura": 27.5,
+    "humedad": 30.7,
+    "viento": 21.2,
+    "lluvia": 50.9,
+    "alertas": []
+  },
+  {
+    "fecha": "2026-02-05",
+    "zona": "Este",
+    "temperatura": 12.7,
+    "humedad": 48.6,
+    "viento": 86.0,
+    "lluvia": 32.6,
+    "alertas": []
+  },
+  {
+    "fecha": "2026-02-12",
+    "zona": "Oeste",
+    "temperatura": -0.9,
+    "humedad": 58.1,
+    "viento": 37.9,
+    "lluvia": 6.6,
+    "alertas": []
+  },
+  {
+    "fecha": "2026-02-12",
+    "zona": "Este",
+    "temperatura": -4.7,
+    "humedad": 51.1,
+    "viento": 0.8,
+    "lluvia": 62.5,
+    "alertas": []
+  },
+  {
+    "fecha": "2026-02-15",
+    "zona": "Sur",
+    "temperatura": -1.1,
+    "humedad": 45.6,
+    "viento": 20.0,
+    "lluvia": 113.5,
+    "alertas": []
+  },
+  {
+    "fecha": "2026-02-19",
+    "zona": "Norte",
+    "temperatura": 5.7,
+    "humedad": 49.1,
+    "viento": 101.5,
+    "lluvia": 10.3,
+    "alertas": []
+  },
+  {
+    "fecha": "2026-02-22",
+    "zona": "Oeste",
+    "temperatura": -4.1,
+    "humedad": 48.2,
+    "viento": 21.6,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2026-02-24",
+    "zona": "Norte",
+    "temperatura": -4.0,
+    "humedad": 72.1,
+    "viento": 49.8,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2026-03-03",
+    "zona": "Oeste",
+    "temperatura": 13.0,
+    "humedad": 48.7,
+    "viento": 37.0,
+    "lluvia": 21.2,
+    "alertas": []
+  },
+  {
+    "fecha": "2026-03-05",
+    "zona": "Oeste",
+    "temperatura": 17.5,
+    "humedad": 48.2,
+    "viento": 64.2,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2026-03-14",
+    "zona": "Centro",
+    "temperatura": 30.4,
+    "humedad": 20,
+    "viento": 55.6,
+    "lluvia": 9.3,
+    "alertas": []
+  },
+  {
+    "fecha": "2026-03-16",
+    "zona": "Sur",
+    "temperatura": 14.1,
+    "humedad": 45.1,
+    "viento": 20.4,
+    "lluvia": 61.0,
+    "alertas": []
+  },
+  {
+    "fecha": "2026-03-21",
+    "zona": "Oeste",
+    "temperatura": 16.5,
+    "humedad": 73.8,
+    "viento": 44.5,
+    "lluvia": 76.0,
+    "alertas": []
+  },
+  {
+    "fecha": "2026-03-28",
+    "zona": "Sur",
+    "temperatura": 14.3,
+    "humedad": 70.1,
+    "viento": 28.5,
+    "lluvia": 38.0,
+    "alertas": []
+  },
+  {
+    "fecha": "2026-03-28",
+    "zona": "Este",
+    "temperatura": 10.4,
+    "humedad": 80.6,
+    "viento": 72.9,
+    "lluvia": 52.2,
+    "alertas": []
+  },
+  {
+    "fecha": "2026-04-02",
+    "zona": "Sur",
+    "temperatura": 20.4,
+    "humedad": 31.9,
+    "viento": 7.7,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2026-04-04",
+    "zona": "Norte",
+    "temperatura": 3.3,
+    "humedad": 71.9,
+    "viento": 37.4,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2026-04-04",
+    "zona": "Norte",
+    "temperatura": 19.2,
+    "humedad": 44.7,
+    "viento": 119.7,
+    "lluvia": 53.7,
+    "alertas": []
+  },
+  {
+    "fecha": "2026-04-05",
+    "zona": "Este",
+    "temperatura": 12.6,
+    "humedad": 67.5,
+    "viento": 57.6,
+    "lluvia": 18.5,
+    "alertas": []
+  },
+  {
+    "fecha": "2026-04-07",
+    "zona": "Oeste",
+    "temperatura": 13.8,
+    "humedad": 75.2,
+    "viento": 62.8,
+    "lluvia": 47.3,
+    "alertas": []
+  },
+  {
+    "fecha": "2026-04-07",
+    "zona": "Oeste",
+    "temperatura": 37.4,
+    "humedad": 22.5,
+    "viento": 63.7,
+    "lluvia": 0,
+    "alertas": []
+  },
+  {
+    "fecha": "2026-04-13",
+    "zona": "Norte",
+    "temperatura": 17.7,
+    "humedad": 82.0,
+    "viento": 39.8,
+    "lluvia": 16.6,
+    "alertas": []
+  },
+  {
+    "fecha": "2026-04-14",
+    "zona": "Centro",
+    "temperatura": 21.3,
+    "humedad": 68.5,
+    "viento": 45.2,
+    "lluvia": 8.4,
+    "alertas": []
+  },
+  {
+    "fecha": "2026-04-15",
+    "zona": "Sur",
+    "temperatura": 19.8,
+    "humedad": 74.2,
+    "viento": 32.1,
+    "lluvia": 12.7,
+    "alertas": []
+  }
 ]
