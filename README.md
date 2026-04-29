@@ -1,173 +1,238 @@
-# 🌦️ App Climática Avanzada
+# 🌦️ ClimApp
 
-Aplicación web en Flask para registrar, consultar y analizar datos meteorológicos por zonas.
+### Aplicación web para consultar, registrar y comparar datos meteorológicos en España
 
-🚀 Python · Flask · Pandas · Matplotlib · JavaScript
-
----
-
-## ✨ Descripción
-
-App web desarrollada con **Flask** que permite gestionar datos meteorológicos de distintas zonas.
-
-Incluye:
-- validación de datos
-- sistema de alertas
-- almacenamiento en JSON
-- estadísticas
-- generación de gráficas
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Flask](https://img.shields.io/badge/Flask-Web%20App-black)
+![AEMET](https://img.shields.io/badge/API-AEMET-red)
+![Estado](https://img.shields.io/badge/Estado-En%20desarrollo-success)
 
 ---
 
-## 🧠 Funcionalidades
+## 📌 Descripción
 
-### 🔐 Autenticación
-- Registro de usuarios
-- Login
+**ClimApp** es una aplicación web desarrollada con **Python + Flask** que permite consultar el tiempo en España en tiempo real utilizando la **API oficial de AEMET**.
 
-### 🌡️ Registro climático
-Permite guardar:
-- fecha
-- zona
-- temperatura
-- humedad
-- viento
-- lluvia
+La aplicación detecta la ubicación del usuario mediante GPS, localiza la estación meteorológica AEMET más cercana y muestra datos actualizados de:
 
-### 🚨 Alertas
-- calor extremo
-- frío extremo
-- viento fuerte
+- Temperatura  
+- Humedad  
+- Viento  
+- Presión atmosférica  
+- Precipitaciones  
+- Alertas meteorológicas  
 
-### 🔍 Consulta por zona
-Filtra registros por zona.
-
-### 📊 Estadísticas
-- medias
-- máximos
-- conteos
-- gráficas automáticas
+Además, permite registrar datos climáticos manuales, consultar históricos y comparar las mediciones introducidas por el usuario con los datos oficiales de AEMET.
 
 ---
 
-## 🏗️ Estructura
-``` 
-App_climatica_Avanzada/
-│
-├── app.py
-├── data/
-├── controllers/
-├── models/
-├── utils/
-├── templates/
-├── static/
-└── tests/
+## 📚 Documentación completa
+
+👉 https://mintlify.wiki/adrianaarang/climapp
+
+---
+
+## 🚀 Funcionalidades principales
+
+### 🌍 Consulta meteorológica en tiempo real
+
+ClimApp utiliza la geolocalización del navegador para obtener la latitud y longitud del usuario y enviarlas al endpoint:
+
+```text
+GET /api/clima?lat=&lon=
 ```
-Arquitectura basada en separación de responsabilidades (tipo MVC).
+
+A partir de esas coordenadas, la aplicación calcula la estación AEMET más cercana mediante la fórmula de Haversine.
+
+## 📝 Registro manual de datos climáticos
+
+Desde /registro, el usuario puede introducir sus propias mediciones:
+
+Fecha
+Temperatura
+Humedad
+Velocidad del viento
+Lluvia
+Municipio
+Estación AEMET asociada
+
+Los datos se validan y se almacenan localmente en formato JSON.
+''
+
+## 📂 Consulta de histórico
+
+Desde /consulta, se pueden filtrar registros guardados por:
+
+- Municipio
+- Fecha
+
+## 🔍 Comparación con AEMET
+
+Desde /comparar, ClimApp permite comparar un registro manual con los datos oficiales de AEMET.
+
+Se calculan diferencias en:
+
+- Temperatura
+- Humedad
+- Viento
+- Lluvia
+
+## 🚨 Sistema de alertas
+Alerta	Condición
+ROJA	Temperatura ≥ 40 ºC
+NARANJA	Temperatura ≥ 35 ºC
+HELADA	Temperatura ≤ 0 ºC
+VIENTO_FUERTE	Viento > 70 km/h
+LLUVIA_INTENSA	Lluvia > 30 mm
+HUMEDAD_ALTA	Humedad ≥ 90%
+
+## 🏗️ Arquitectura
+
+El proyecto utiliza un patrón de diseño desacoplado para separar la lógica de negocio de la interfaz:
+
+**Templates** ↔ **Controllers** ➔ **Services** ➔ **Repositories** ➔ **Models**
+
 ---
 
-## ⚙️ Instalación
+### 📂 Estructura de Capas
 
-### 1. Clonar repositorio
+* **🎨 Templates (Vistas)**
+    * `index.html`
+    * `dashboard.html`
+    * `alerts.html`
+* **🎮 Controllers** (Gestión de flujo)
+    * `view_controller.py`
+    * `manual_controller.py`
+    * `compare_controller.py`
+* **⚙️ Services** (Lógica y APIs)
+    * `WeatherAPIService`
+    * `NormalizerService`
+    * `AlertService`
+    * `RetryService`
+* **📦 Repositories** (Datos)
+    * `JSONRepository`
+* **🏛️ Models** (Entidades)
+    * `RegistroClimatico`
+    * `Zona`
 
-git clone https://github.com/adryeli/App_climatica_Avanzada
+## 🔄 Flujo de Datos en Tiempo Real
 
-cd App_climatica_Avanzada
+Para procesar la información climática, el sistema sigue este flujo:
+
+1. **Usuario:** Permite acceso a la ubicación.
+2. **Frontend:** Obtiene coordenadas ($lat, lon$).
+3. **Backend:** Recibe petición en `GET /api/clima`.
+4. **API AEMET:** Se consulta el endpoint oficial.
+5. **Procesamiento:** * Selección de la estación más cercana.
+   * Normalización de datos.
+   * Evaluación de alertas climáticas.
+6. **Respuesta:** Envío de JSON al navegador para actualizar la interfaz.
+
+---
+
+## 🔌 Integración con AEMET
+
+ClimApp utiliza el OpenData de AEMET. La API funciona mediante un sistema de **doble petición**:
+
+1. **Petición inicial:** Se solicita el recurso al endpoint de observación convencional.
+2. **Datos:** AEMET responde con un JSON que contiene una **URL temporal**.
+3. **Descarga:** El sistema realiza una segunda petición a esa URL para obtener los datos climáticos reales.
+
+---
+
+## 🛠️ Tecnologías Utilizadas
+
+| Tecnología | Uso |
+| :--- | :--- |
+| **Python** | Lenguaje principal del backend |
+| **Flask** | Framework web y enrutamiento |
+| **Jinja2** | Renderizado de plantillas dinámicas |
+| **JavaScript** | Gestión de geolocalización y Fetch API |
+| **Requests** | Consumo de la API externa de AEMET |
+| **Pytest** | Suite de pruebas unitarias |
+| **JSON** | Sistema de persistencia de datos |
+
+---
+
+## 📡 Rutas Principales (API & Web)
+
+| Método | Ruta | Descripción |
+| :--- | :--- | :--- |
+| `GET` | `/` | Dashboard principal |
+| `GET` | `/registro` | Formulario de entrada manual |
+| `POST` | `/api/registrar` | Persistencia de nuevos datos |
+| `GET/POST` | `/consulta` | Visualización del histórico |
+| `GET/POST` | `/comparar` | Módulo de comparación climática |
+| `GET` | `/api/clima` | Obtención de datos en tiempo real (AEMET) |
+
+---
 
 
-### 2. Crear entorno virtual
+## ⚙️ Instalación y Configuración
 
-python -m venv .venv
-.venv\Scripts\activate
+Sigue estos pasos para poner en marcha el proyecto en tu entorno local:
 
+### 1. Instalar dependencias
 
-### 3. Instalar dependencias
-
+```bash
 pip install -r requirements.txt
+```
 
+### 2. Configurar variables de entorno
 
----
+Crea un archivo .env en la raíz del proyecto y añade tus credenciales:
 
-## ▶️ Ejecutar la app
+```bash
+AEMET_API_KEY=tu_api_key_aqui
+SECRET_KEY=tu_clave_secreta
+```
 
+### 3. Ejecutar la aplicación
 python app.py
 
-
-Abrir en navegador:
-
-http://127.0.0.1:5000
-
-
+```bash
+📍 Accede desde tu navegador a:
+http://localhost:5000
+```
 ---
 
-## 📦 Dependencias
+### 🧪 Testing y Validación
+Para asegurar la integridad de los datos, el sistema aplica las siguientes reglas de negocio:
 
-Flask==3.1.3
-pandas
-matplotlib
-numpy
+- Temperatura: rango permitido de -50 a 60 ºC
+- Humedad: valores entre 0% y 100%
+- Viento / Lluvia: solo valores positivos (≥ 0)
+
+Ejecuta la suite de pruebas unitarias con:
+
+```bash
 pytest
-
-
----
-
-## 🔄 Flujo
-
-1. Login / registro  
-2. Introducción de datos  
-3. Validación  
-4. Alertas  
-5. Guardado en JSON  
-6. Consulta  
-7. Estadísticas  
+```
 
 ---
 
-## 🧪 Tests
+## 🔮 Roadmap
 
-pytest
+Próximas funcionalidades planeadas para el desarrollo de **ClimApp**:
 
-
----
-
-## 📁 Datos
-
-data/usuarios.json
-data/registros.json
-
+- [ ] **Persistencia:** Migración a base de datos relacional (PostgreSQL).
+- [ ] **Seguridad:** Sistema de autenticación de usuarios (Login/Registro).
+- [ ] **Visualización:** Dashboard interactivo con gráficos dinámicos (Chart.js).
+- [ ] **Inteligencia:** Implementación de modelos de IA para predicción de tendencias.
 
 ---
 
-## 📝 Logs
+## 👩‍💻 Autores
 
-logs/app.log
-
-
----
-
-## 🚀 Mejoras futuras
-
-- cifrado de contraseñas  
-- base de datos real  
-- API REST  
-- filtros por fecha  
-- exportación  
-- mejora UI  
-
----
-
-## 👩‍💻 Autor
-
-Helen
-Adriana 
-Leo
-Elizabeth
-Luis
+| Miembro | Rol | Contacto |
+| :--- | :--- | :--- |
+| **Adriana Aránguez** | Scrum Master | [@adrianaarang](https://github.com/adrianaarang) |
+| **Juan Manuela de la Fuente** | Product Master | [@juandelaf1](https://github.com/juandelaf1) |
+| **Juan Manuela de la Fuente** | Product Master | [@juandelaf1](https://github.com/juandelaf1) |
+| **Isabela Tellez** | Desarrolladora | [@Isabela-Tellez](https://github.com/Isabela-Tellez) |
+| **Elena Carino** | Desarrolladora | [@elenacarino-max](https://github.com/elenacarino-max) |
 
 
----
 
-## 📄 Licencia
 
-Uso educativo
 
